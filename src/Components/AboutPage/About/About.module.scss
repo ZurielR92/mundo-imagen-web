@@ -1,0 +1,29 @@
+@import '/styles/theme.scss';
+
+.grid {
+    width: 1200px;
+    margin: auto;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    @include media-up( md ) {
+        gap: 30px;
+        grid-template-columns: 1fr 1fr;
+    }
+    > :nth-child( 1 ) {
+        position: relative;
+        img {
+            object-fit: contain;
+        }
+    }
+    > :nth-child( 2 ) {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        p {
+            color: $textLight;
+            font-size: 18px;
+            line-height: 30px;           
+        }
+    }
+}

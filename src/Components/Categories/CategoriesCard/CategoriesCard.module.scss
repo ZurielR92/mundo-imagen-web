@@ -1,0 +1,162 @@
+@import '@/styles/theme.scss';
+
+.card {
+    padding: 0 15px;
+    border-radius: 20px;
+    font-family: var(--font-rubik);
+    font-weight: 300;
+    margin-bottom: 50px;
+    max-width: 370px;
+    margin: auto;
+}
+
+.img-box {
+    position: relative;
+    overflow: hidden;
+    img {
+        object-fit: cover;
+    }
+}
+
+.img-box::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: rgba(33,33,33,.6);
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: all ease .4s;
+}
+
+.card:hover .img-box::before {
+    z-index: 300;
+    opacity: 1;
+}
+
+.text-box {
+    position: relative;
+    background: #f4f5f9;
+    margin-top: 10px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+
+    display:inline-block;
+    vertical-align:middle;
+    -webkit-transform:perspective(1px) translateZ(0);
+    transform:perspective(1px) translateZ(0);
+    box-shadow:0 0 1px transparent;
+    position:relative;
+    -webkit-transition-property:color;
+    transition-property:color;
+    -webkit-transition-duration:.5s;
+    transition-duration:.5s
+  }
+
+.text-box::before {
+    content:"";
+    position:absolute;
+    z-index:-1;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    background:$primary;
+    -webkit-transform:scaleY(0);
+    transform:scaleY(0);
+    -webkit-transform-origin:50% 0;transform-origin:50% 0;
+    -webkit-transition-property:transform;
+    transition-property:transform;
+    -webkit-transition-duration:.5s;
+    transition-duration:.5s;
+    -webkit-transition-timing-function:ease-out;transition-timing-function:ease-out
+}
+
+.text-box:active, .text-box:focus, .text-box:hover {
+    color: #fff;
+}
+
+.card:hover .text-box::before, .text-box:active::after, .text-box:focus::before, .text-box:hover::before {
+    -webkit-transform: scaleY(1);
+    transform: scaleY(1);
+    -webkit-transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
+    transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
+}
+
+
+
+
+
+.text-box h2 {
+    margin: 0;
+    color: $dark;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.text-box p {
+    color: #747474;
+    font-size: 16px;
+    line-height: 25px;
+    margin: 0;
+}
+
+.text-box .meta-info {
+margin-top: 5px;
+margin-bottom: 15px;
+}
+
+.text-box .meta-info p {
+    margin: 0;
+    font-size: 16px;
+    color: #747474;
+}
+
+.text-box .meta-info p span {
+    color: darken( $resalt, 10% );
+    font-weight: bold;
+}
+
+.text-box a.read-more {
+    background: darken( $resalt, 10% );
+    color: #fff;
+    font-size: 15px;
+    border-radius: 50px;
+    font-weight: 400;
+    text-align: center;
+    position: absolute;
+    padding: 10px;
+    bottom: -21px;
+    right: 10px;
+    transition: all 0.4s ease;
+}
+
+.text-box a.read-more:hover {
+    background: #fff;
+    color: darken( $resalt, 10% );
+}
+
+
+
+
+
+
+
+
+
+.card:hover .text-box h3,
+.card:hover .text-box p {
+    color: #fff;
+}
+
+.card:hover .text-box .meta-info p span {
+    color: #212121;
+}
+
+.read-more {
+    background-color: #fff;
+    color: #ff4328;
+}

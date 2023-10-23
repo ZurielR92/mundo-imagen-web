@@ -1,0 +1,103 @@
+@import '/styles/theme.scss';
+
+.card {
+    padding: 0 15px;
+    border-radius: 20px;
+    font-family: 'Rubik';
+    font-weight: 300;
+    margin: auto;
+    margin-bottom: 50px;
+    max-width: 370px;
+}
+
+.img-box {
+    position: relative;
+    overflow: hidden;
+}
+
+.card > h3 {
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.card > p {
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+
+.container-form {
+    gap: 5px;
+    display: grid;
+    grid-template-columns: 1fr 2fr 2fr;
+    margin-bottom: 10px;
+}
+
+.container-form label {
+    font-weight: 400;
+}
+
+.container-form input {
+    font-size: 16px;
+    width: 100%;
+}
+
+
+
+.container-selector {
+    display: flex;
+    flex-direction: column;
+}
+
+.container-selector label {
+    font-weight: 400;
+    margin-bottom: 5px;
+}
+
+.container-selector select {
+    font-size: 16px;
+    margin-bottom: 10px;
+    border-radius: 35px;
+    padding: 10px 20px;
+    background: $light;
+    color: $dark
+}
+
+.container-buttons {
+  display: flex
+}
+
+.btn-add-budget {
+  background-color: $primary;
+  border: none;
+  flex-grow: 1;
+  border-radius: 35px;
+  font-weight: 600;
+  color: #fff;
+  margin-right: 10px;
+  font-size: 15px;
+  transition: all .4s;
+  cursor: pointer;
+}
+
+.btn-add-budget:hover {
+  background-color: #fec931;
+  color: #212121;
+}
+
+
+.btn-whatsapp {
+  appearance: none;
+  background-color: #2ea44f;
+  border: none;
+  outline: none;
+  border-radius: 100px;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  transition: all .4s;
+}
+
+.btn-whatsapp:hover {
+  background-color: #087026;
+}

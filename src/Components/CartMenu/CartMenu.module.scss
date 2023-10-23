@@ -1,0 +1,163 @@
+@import '@/styles/theme.scss';
+
+.main {
+    height: 100%;
+	width: 330px;
+	left: 0;
+    top: 0;
+	position: fixed;
+	background-color: #f5f6fa;
+	z-index: 9999;
+	transform: translateX(100vw);
+	transition: transform 250ms ease-in-out;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    color: $textLight;
+}
+
+.main hr {
+    border: 3px solid #666;
+    text-align: center;
+    border-radius: 300px/10px;
+    height: 0px;
+    width: 100%;
+}
+
+.main.activo {
+    transform: translateX(calc(100vw - 330px));
+}
+
+.title-container {
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+    margin-bottom: 0px;
+}
+
+.title-container .title {
+    font-weight: 800;
+}
+
+.products-container {
+    flex-grow: 1;
+    overflow: auto;
+}
+
+.products-container > ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.products-container > ul > li {
+    padding-top: 20px;
+    font-weight: 300;
+}
+
+.products-container > ul > li > span {
+    cursor: pointer;
+    font-size: 20px;
+    margin-right: 20px;
+    color: #ff4328;
+    font-weight: 800;
+    transition: all .4s;
+}
+
+.products-container > ul > li > span:hover {
+    color: #d82f15;
+}
+
+
+.form-container {
+    margin-bottom: 5px;
+}
+
+.form-container .title {
+    font-family: var(--font-pacifico);
+    font-size: 18px;
+    color: darken( $resalt, 10% );
+}
+.form-container .subtitle {
+    font-weight: 100;
+    font-size: 12px;
+}
+
+.form-container > input {
+    padding: 10px;
+    width: 95%;
+    border: none;
+    outline: none;
+    background: $light;
+    border-radius: 35px;
+    font-size: 16px;
+    margin-top: 10px;
+    font-weight: 500;
+    color: $textLight;
+}
+
+/* .footer-container {
+
+} */
+
+.footer-container > p {
+    text-align: center;
+    font-weight: 200;
+    font-size: 14px;
+    margin: 0;
+    margin-bottom: 5px;
+    line-height: 15px;
+}
+
+.footer-container > button {
+    width: 100%;
+    padding: 20px;
+    border-radius: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    outline: none;
+    background-color: #25d366;
+    font-weight: 600;
+    font-size: 18px;
+    color: white;
+    cursor: pointer;
+    transition: all .4s;
+    svg {
+        margin-right: 10px;
+    }
+}
+
+.footer-container > button:hover {
+    background-color: #1eac52;
+}
+
+.footer-container > button.activo {
+    background-color: darkgrey;
+    cursor: auto;
+}
+
+.error {
+    display: none;
+    color: red;
+    padding-left: 10px;
+    font-size: 12px;
+}
+.error.activo {
+    display: block;
+}
+
+.close {
+    cursor: pointer;
+    color: $error;
+    margin-right: 15px;
+    padding: 5px;
+    transition: all .2s ease-in-out;
+    font-size: 17px;
+    border-radius: 50px;
+    &:hover {
+        background: $error;
+        color: $TextOnDark;
+    }
+}

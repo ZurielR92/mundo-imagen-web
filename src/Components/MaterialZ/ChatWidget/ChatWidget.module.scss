@@ -1,0 +1,201 @@
+@import '@/styles/theme.scss';
+
+
+.burbuja {
+    z-index: 999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 30px;
+    left: 30px;
+    width: 60px;
+    height: 60px;
+    background: #25d366;
+    border-radius: 50px;
+    box-shadow: 4px 4px 6px rgba( 0,0,0,.4 );
+    cursor: pointer;
+    transition: background .2s ease-in-out;
+    &:hover {
+        background: #1eac52;
+    }
+    &.active {
+        @include media-down( sm ) {
+            animation: burbuja forwards;
+            animation-duration: .5s;
+        }
+        @include media-up ( sm ) {
+            animation: burbuja2 forwards;
+            animation-duration: .5s;
+        }
+    }
+    span {
+        font-size: 18px;
+        font-weight: 600;
+        letter-spacing: 1px;
+        display: flex;
+        color: white;
+        svg {
+            margin-left: 10px;
+            margin-top: 2px;
+        }
+    }
+}
+
+.chat {
+    z-index: 998;
+    display: none;
+    opacity: 0;
+    width: 320px;
+    position: fixed;
+    padding-bottom: 80px;
+    overflow: hidden;
+    bottom: 20px;
+    left: 20px;
+    background: #fff;
+    box-shadow: 3px 3px 5px rgba(0,0,0,.4);
+    border-radius: 37px;
+    @include media-up( sm ) {
+        width: 400px;
+    }
+    &.active {
+        display: block;
+        animation: chat forwards;
+        animation-duration: .7s;
+
+    }
+    .header{
+        background: #095E54;
+        padding: 20px;
+        padding-top: 15px;
+        padding-bottom: 12px;
+        display: flex;
+        .close {
+            position: absolute;
+            right: 10px;
+            top: 10px;
+            width: 30px;
+            height: 30px;
+            display: flex;
+            justify-content: center;
+            cursor: pointer;
+            font-size: 20px;
+            line-height: 20px;
+            color: white;
+        }
+        .avatar{
+            border-radius: 50%;
+            width: 52px;
+            height: 52px;
+            position: relative;
+            img {
+                border-radius: 50%;
+            }
+
+            &::before {
+                background: #4ad504;
+                position: absolute;
+                content: '';
+                left: 42px;
+                top: 38px;
+                border-radius: 50%;
+                width: 10px;
+                height: 10px;
+        }
+        }
+        .texto {
+            color: #fff;
+            font-size: 1rem;
+            line-height: 1.15rem;
+            margin: 0 0 0 10px;
+            .nombre {
+                font-size: 1rem;
+                font-weight: bold;
+                line-height: 1.25rem;
+            }
+            .estado {
+                font-size: 12px;
+                font-weight: normal;
+                line-height: 18px;
+            }
+        }
+    }
+
+    .body {
+        background:  url(/public/ws_bg.jpg) center no-repeat;
+        .dentro {
+            background: rgba(230, 221, 212, .88);
+            padding: 20px;
+            .dialogo {
+                background: #fff;
+                border-radius: 10px;
+                display: inline-block;
+                padding: 1rem 1rem 0.25rem 1rem;
+                position: relative;
+                &::before {
+                    border-left: 15px solid transparent;
+                    border-top-left-radius: 5px;
+                    border-right: 20px solid transparent;
+                    border-top: 20px solid #fff;
+                    border-bottom-left-radius: 5px;
+                    content: '';
+                    left: -10px;
+                    top: 0;
+                    position: absolute;
+                    width: 0;
+                    height: 0;
+                }
+                .nombre {
+                    color: rgba(0,0,0,.4);
+                    font-size: 14px;
+                    font-weight: 600;
+                    line-height: 20px;
+                    margin: 0 0 0 .5rem;
+                }
+                .texto {
+                    font-size: 14px;
+                    font-weight: normal;
+                    line-height: 17px;
+                    color: #111;
+                    p {
+                        margin: 0 0 0 .25rem;
+                    }
+                }
+                .hora {
+                    font-size: 13px;
+                    font-weight: normal;
+                    line-height: 15px;
+                    text-align: right;
+                    color: rgb( 17,17,17,.5 );
+                }
+            }
+        }
+    }
+}
+
+@keyframes chat {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+
+@keyframes burbuja {
+    from {
+        width: 60px;
+    }
+    to {
+        width: 300px;
+    }
+}
+@keyframes burbuja2 {
+    from {
+        width: 60px;
+    }
+    to {
+        width: 380px;
+    }
+}

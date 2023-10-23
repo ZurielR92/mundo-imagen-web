@@ -1,0 +1,55 @@
+//Colores
+
+$primary: #1A9FD7;
+$secondary: #317DAE;
+$resalt: #FEC931;
+$variantResalt: rgb(255, 102, 0);
+$textDark: #212121;
+$darkLight: #212121;
+$textLight: #757575;
+$error: #f44336;
+$textExtraLight: #A0A0A0;
+$TextOnDark: #ffffff;
+$dark: #171717;
+$extraLight: rgb(240, 240, 240);
+$light: #FFFFFF;
+
+
+
+$breakpoints: (
+    xs: 300px,
+    sm: 576px,
+    md: 768px,
+    lg: 992px,
+    xl: 1200px,
+    xxl: 1400px,
+    xxxl: 1900px,
+    1048: 1048px,
+    1330: 1330px
+);
+
+
+@mixin media-down($breakpoint) {
+    @media screen and (max-width: map-get($breakpoints, $breakpoint)) {
+        @content;
+    }
+}
+@mixin media-up($breakpoint) {
+    @media screen and (min-width: map-get($breakpoints, $breakpoint)) {
+        @content;
+    }
+}
+@mixin width-down($breakpoint) {
+    @media screen and (max-width: map-get($breakpoints, $breakpoint)) {
+        @content;
+    }
+}
+@mixin width-up($breakpoint) {
+    @media screen and (min-width: map-get($breakpoints, $breakpoint)) {
+        @content;
+    }
+}
+
+.noOverflow {
+    overflow: hidden;
+}

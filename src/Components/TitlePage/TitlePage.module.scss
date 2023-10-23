@@ -1,0 +1,40 @@
+@import '/styles/theme.scss';
+
+.titlepage{
+    font-family: Rubik, Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    background: $extraLight;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin-top: 40px;
+    @include media-up( md ) {
+        margin-top: 70px;
+        height: 200px;
+    }
+    h1 {
+        padding: 0 20px;
+        width: 100%;
+        font-size: 40px;
+        color: $textDark;
+        max-width: 1300px;
+        margin: auto;
+        @include media-up( md ) {
+            font-size: 60px;
+        }
+    }
+    .breadcumbs {
+        display: none;
+        @include media-up( md ) {
+            display: block;
+            z-index: 999;
+            position: absolute;
+            background: $primary;
+            padding: 20px 50px;
+            right: 0;
+            bottom: -28px;
+            border-top-left-radius: 50px;
+            border-bottom-left-radius: 50px;
+        }
+    }
+}

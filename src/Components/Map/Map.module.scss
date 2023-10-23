@@ -1,0 +1,22 @@
+@import '/styles/theme.scss';
+
+.mapa_responsivo {
+    z-index: 1;
+    overflow:hidden;
+    position:relative;
+    height:85vh;
+}
+
+.mapa_responsivo iframe {
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+}
+
+@media screen and (min-width: 800px) {
+    .mapa_responsivo {
+        height:50vh;
+    }
+}

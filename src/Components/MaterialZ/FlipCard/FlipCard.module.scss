@@ -1,0 +1,36 @@
+@import '@/styles/theme.scss';
+
+
+
+
+.card {
+    position: relative;
+    transform-style: preserve-3d;
+    transition: all .5s ease-in-out;
+    > div {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        backface-visibility: hidden;
+        padding: 5px;
+        p {
+            margin: 0;
+            margin-top: 5px;
+            font-size: 14px;
+        }
+    }
+    > :nth-child( 1 ) {
+        transform: perspective( 500px ) rotateY( 0deg );
+    }
+    > :nth-child( 2 ) {
+        transform: perspective( 500px ) rotateY( 180deg );
+    }
+    &:hover {
+        transform: perspective( 500px ) rotateY( 180deg );
+    }
+}

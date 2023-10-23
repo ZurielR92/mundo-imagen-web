@@ -1,0 +1,29 @@
+@import '@/styles/theme.scss';
+
+.titlesection {
+    text-align: center;
+    .subtitle {
+        font-family: var(--font-pacifico);
+        color: $resalt;
+        font-size: 16px;
+        line-height: 30px;
+        @include media-up( md ) {
+            font-size: 24px;
+
+        }
+    }
+    .title {
+        margin: 0;
+        font-family: var(--font-rubik);
+        color: $dark;
+        font-size: 40px;
+        line-height: 54px;
+        letter-spacing: -3px;
+        margin-bottom: 20px;
+        @include media-up( md ) {
+            margin-top: 10px;
+            font-size: 60px;
+            margin-bottom: 40px;
+        }
+    }
+}
