@@ -90,8 +90,8 @@ export const categoriesList: ICategory[] = [
     {
         code: '0102',
         type: 'Publicidad Impresa',
-        name: 'Flyers Publicitarios',
-        shortDescription: 'Un Flyer es un elemento publicitario útil para dar a conocer de manera física y completa tus productos y servicios.',
+        name: 'Volantes Publicitarios',
+        shortDescription: 'Un volante es un elemento publicitario útil para dar a conocer de manera física y completa tus productos y servicios.',
         description: '',
         basicPrice: 70000,
         minQuantity: 1000,
@@ -1541,6 +1541,92 @@ export const categoriesList: ICategory[] = [
                 title:'Poleron',
                 img: '/img/products/souvenirs_publicitarios/camiseta_poleron.jpg',
                 altImg:'Poleron personalizado en santiago',
+                shortDescription:'',
+                priceConfig: {
+                    priceType: 'Precio Fijo',
+                    price: 80000,
+                    queantity: 1000,
+                    quantities: [
+                        '10','20','50','100','200','500','1000','2000'
+                    ]
+                }
+            },
+        ]
+    },
+    {
+        code: '0701',
+        type: 'Cajas y Empaques',
+        name: 'Cajas Plegadizas',
+        shortDescription: 'Aquí va el texto descriptivo para cajas plegadizas',
+        description: 'dfjsdfsd',
+        basicPrice: 500000,
+        minQuantity: 100,
+        url: '/servicios/cajas_y_empaques/cajas_plegadizas',
+        displayImage: '/img/products/cajas_empaques/plegadizas.jpg',
+        altDisplay: 'Cajas plegadizas en medellín',
+        gallery: [''],
+        products: [
+            {
+                title:'Caja Plegadiza Ecológica',
+                img: '/img/products/cajas_empaques/plegadizas_ecologicas.jpg',
+                altImg:'Caja plegadiza ecológica en nedellín',
+                shortDescription:'',
+                priceConfig: {
+                    priceType: 'Precio Fijo',
+                    price: 80000,
+                    queantity: 1000,
+                    quantities: [
+                        '10','20','50','100','200','500','1000','2000'
+                    ]
+                }
+            },
+            {
+                title:'Caja Plegadiza Impresa',
+                img: '/img/products/cajas_empaques/plegadizas_impresas.jpg',
+                altImg:'Caja plegadiza impresa en nedellín',
+                shortDescription:'',
+                priceConfig: {
+                    priceType: 'Precio Fijo',
+                    price: 80000,
+                    queantity: 1000,
+                    quantities: [
+                        '10','20','50','100','200','500','1000','2000'
+                    ]
+                }
+            },
+        ]
+    },
+    {
+        code: '0702',
+        type: 'Cajas y Empaques',
+        name: 'Tapa y Base',
+        shortDescription: 'Aquí va el texto descriptivo para cajas de tapa y',
+        description: 'dfjsdfsd',
+        basicPrice: 500000,
+        minQuantity: 100,
+        url: '/servicios/cajas_y_empaques/cajas_tapa_base',
+        displayImage: '/img/products/cajas_empaques/tapa_base.jpg',
+        altDisplay: 'Cajas tapa_base en medellín',
+        gallery: [''],
+        products: [
+            {
+                title:'Taba y Base Ecológica',
+                img: '/img/products/cajas_empaques/tapa_base_ecologicas.jpg',
+                altImg:'Caja plegadiza ecológica en nedellín',
+                shortDescription:'',
+                priceConfig: {
+                    priceType: 'Precio Fijo',
+                    price: 80000,
+                    queantity: 1000,
+                    quantities: [
+                        '10','20','50','100','200','500','1000','2000'
+                    ]
+                }
+            },
+            {
+                title:'Tapa y Base Impresa',
+                img: '/img/products/cajas_empaques/tapa_base_impresas.jpg',
+                altImg:'Caja plegadiza impresa en nedellín',
                 shortDescription:'',
                 priceConfig: {
                     priceType: 'Precio Fijo',
