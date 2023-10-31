@@ -39,11 +39,17 @@
     font-weight: 800;
 }
 
+.titleList {
+    color: darken($textLight, 10);
+}
 .products-container {
     flex-grow: 1;
     overflow: auto;
 }
 
+.notItems {
+    color: $dark;
+}
 .products-container > ul {
     list-style: none;
     padding: 0;
@@ -76,7 +82,7 @@
 .form-container .title {
     font-family: var(--font-pacifico);
     font-size: 18px;
-    color: darken( $resalt, 10% );
+    color: darken($textLight, 10);
 }
 .form-container .subtitle {
     font-weight: 100;
@@ -104,6 +110,7 @@
     text-align: center;
     font-weight: 200;
     font-size: 14px;
+    color: darken($textLight, 10);
     margin: 0;
     margin-bottom: 5px;
     line-height: 15px;

@@ -85,7 +85,7 @@ export const Header:FC<Props> = () => {
                 className={`${styles["contenedor"]} ${styles['contenedor-enlaces-nav']} ${ isShowMenu && styles.activo }`}>
 
                 <div className={styles['contenedor-logo']}>
-                    <Link href={'/'}>
+                    <Link href={'/'} aria-label='Inicio Mundo Imagen'>
                         <Image alt='' priority src={'/logo_mundo_imagen.png'} width={215} height={48}/>
                     </Link>
                 </div>

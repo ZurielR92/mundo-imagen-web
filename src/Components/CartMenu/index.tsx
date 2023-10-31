@@ -19,8 +19,6 @@ export const CartMenu:FC<Props> = ({ active }) => {
     //REFERENCIAS AL FORMULARIO
     const txtName = useRef<HTMLInputElement>(null);
     const txtNameError = useRef<HTMLSpanElement>(null);
-    const txtEmail = useRef<HTMLInputElement>(null);
-    const txtPhone = useRef<HTMLInputElement>(null);
   
     //IMPORTACIONES DE LOS CONTEXTOS
     const { products, handleRemoveProduct } = useContext( DataContext )
@@ -56,30 +54,25 @@ export const CartMenu:FC<Props> = ({ active }) => {
 
             <div className={`${styles.main} ${isShowCart?styles.activo:''}`}>
                 <div className={styles['title-container']}>
-                <span className={styles.title}>Mi Cotización</span>
-                <span className={ styles.close } onClick={toggleCart}>Cerrar</span>
+                  <span className={styles.title}>Mi Cotización</span>
+                  <span className={ styles.close } onClick={toggleCart}>Cerrar</span>
                 </div>
 
                 <div className={styles['form-container']}>
 
-                <span className={styles.title}>¿Cual es tu nombre?</span>
-                <span className={styles.subtitle}><br/>Si nos dices tu nombre o el de tu organización, podremos brindarte un experiencia mas personalizada</span>
+                  <span className={styles.title}>¿Cual es tu nombre?</span>
 
-                <input ref={txtName} onBlur={handleBlurName} type="text"  placeholder='Ingresa tu Nombre*'/>
-                <span ref={txtNameError} className={styles.error}>Por favor ingresa tu nombre</span>
-
-            {/*           <input ref={txtEmail} type="email" name="" id="" placeholder='Correo Electronico'/>
-                <input ref={txtPhone} type="tel" name="" id="" placeholder='Numero de Teléfono'/> */}
+                  <input ref={txtName} onBlur={handleBlurName} type="text"  placeholder='Ingresa tu Nombre*'/>
+                  <span ref={txtNameError} className={styles.error}>Por favor ingresa tu nombre</span>
 
                 </div>
 
                 <hr />
+                <span className={styles.titleList}>Lista de Productos</span>
+                <hr />
 
                 <div className={styles['products-container']}>
                 <ul>
-                    <span>Lista de Productos</span>
-
-                    <hr />
                     {
                     products.length > 0 ? (
                         products.map(( product, id ) => {
@@ -91,7 +84,7 @@ export const CartMenu:FC<Props> = ({ active }) => {
                         )
                     })
                     ):(
-                        <span><br/><br/><br/>No tienes productos agregados a tu cotización</span>
+                        <li className={styles.notItems}><br/><br/><br/>No tienes productos agregados a tu cotización</li>
                     )
                     }
                 </ul>
@@ -99,7 +92,7 @@ export const CartMenu:FC<Props> = ({ active }) => {
 
                 <div className={styles['footer-container']}>
                 <hr />
-                <p>Para lograr un atención mas personalizada, puede enviar la lista de productos a cotizar a nuestro departamento de ventas via whatsapp. Le estaremos respondiendo en la brevedad posible</p>
+                <p>Solicita tu cotización a nuestro departamento de ventas via whatsapp. Le estaremos respondiendo en la brevedad posible</p>
                 <button onClick={handleSendBudget} className={products.length<1?styles.activo:''}><WsIcon width={ 28 } fill='#fff'/> Solicitar Cotización</button>
                 </div>
 
