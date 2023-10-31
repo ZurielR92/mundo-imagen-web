@@ -14,7 +14,7 @@ interface Props {
 
 }
 
-export const Header:FC<Props> = () => {
+const Header:FC<Props> = () => {
 
     const innerWidth = (typeof window === 'undefined') ? 0 : window.innerWidth;
     const esDispositivoMovil = () => innerWidth <= 1048;
@@ -109,12 +109,16 @@ export const Header:FC<Props> = () => {
                     <li className={ styles.separador_links }>
                         <span></span>
                     </li>
+
+
                     <li className={ styles.desktop }>
                         <span onMouseEnter={ showServices }>
                             Servicios
                             <SimpleDownArrow style={{ marginLeft:'5px' }} width={ 10 }/>
                         </span>
                     </li>
+
+
                     <li className={ styles.separador_links }>
                         <span></span>
                     </li>
@@ -164,7 +168,9 @@ export const Header:FC<Props> = () => {
                             {/* <span data-categoria='3'>Impresión Laser <i className="fas fa-angle-right"></i></span> */}
                             <span data-categoria='4'>Publicidad Exterior <i className="fas fa-angle-right"></i></span>
                             <span data-categoria='5'>Gran Formato <i className="fas fa-angle-right"></i></span>
-                            <span data-categoria='6'>Souvenirs Publicitarios <i className="fas fa-angle-right"></i></span>
+                            <span data-categoria='6'>Promocionales <i className="fas fa-angle-right"></i></span>
+                            <span data-categoria='8'>Cajas y Empaques<i className="fas fa-angle-right"></i></span>
+                            <span data-categoria='9'>Eventos<i className="fas fa-angle-right"></i></span>
                             {/* <span data-categoria='7'>Diseño Gráfico <i className="fas fa-angle-right"></i></span> */}
                         </div>
 
@@ -414,6 +420,76 @@ export const Header:FC<Props> = () => {
                                         <Image src="/img/menu/diseno_grafico_galeria_4.png" alt="" width={150} height={150}/>
                                 </div>
                             </div>
+
+
+                            <div className={`${styles.subcategoria} subcategoria`} data-categoria='8'>
+                                <div className={`${styles['enlaces-subcategoria']}`}>
+                                    <button className={`${styles['btn-regresar']} btn-regresar`}><i className="fas fa-arrow-left"></i>Regresar</button>
+                                    <h3 className={`${styles.subtitulo}`}>Cajas y Empaques</h3>
+                                        <Link onClick={ handleToggleMenu } href={'/servicios/cajas_y_empaques/cajas_plegadizas'}>
+                                            Cajas Plegadizas
+                                        </Link>
+                                        <Link onClick={ handleToggleMenu } href={'/servicios/cajas_y_empaques/tapa_y_base'}>
+                                            Tapa y Base
+                                        </Link>
+                                        <Link onClick={ handleToggleMenu } href={'/servicios/cajas_y_empaques/funda_y_base'}>
+                                            Funda y Base
+                                        </Link>
+                                        <Link onClick={ handleToggleMenu } href={'/servicios/cajas_y_empaques/bolsas_de_papel'}>
+                                            Bolsas de Papel
+                                        </Link>
+                                        <Link onClick={ handleToggleMenu } href={'/servicios/cajas_y_empaques/bolsas_de_tela'}>
+                                            Bolsas de Tela
+                                        </Link>
+                                </div>
+
+                                <div className={`${styles['banner-subcategoria']}`}>
+                                        <Image src="/img/menu/papeleria_comercial_banner_1.png" alt="" width={300} height={300}/>
+                                </div>
+
+                                <div className={`${styles['galeria-subcategoria']}`}>
+                                        <Image src="/img/menu/papeleria_comercial_galeria_1.png" alt="" width={150} height={150}/>
+                                        <Image src="/img/menu/papeleria_comercial_galeria_2.png" alt="" width={150} height={150}/>
+                                        <Image src="/img/menu/papeleria_comercial_galeria_3.png" alt="" width={150} height={150}/>
+                                        <Image src="/img/menu/papeleria_comercial_galeria_4.png" alt="" width={150} height={150}/>
+                                </div>
+                            </div>
+
+
+
+
+
+                            <div className={`${styles.subcategoria} subcategoria`} data-categoria='9'>
+                                <div className={`${styles['enlaces-subcategoria']}`}>
+                                    <button className={`${styles['btn-regresar']} btn-regresar`}><i className="fas fa-arrow-left"></i>Regresar</button>
+                                    <h3 className={`${styles.subtitulo}`}>Eventos</h3>
+                                        <Link onClick={ handleToggleMenu } href={'/servicios/eventos/eventos_corporativos'}>
+                                            Eventos Corporativos
+                                        </Link>
+                                        <Link onClick={ handleToggleMenu } href={'/servicios/eventos/dias_especiales'}>
+                                            Días Especiales
+                                        </Link>
+                                        <Link onClick={ handleToggleMenu } href={'/servicios/eventos/retiros'}>
+                                            Retiros
+                                        </Link>
+                                        <Link onClick={ handleToggleMenu } href={'/servicios/eventos/eventos_de_couching'}>
+                                            Eventos de Couching
+                                        </Link>
+                                </div>
+
+                                <div className={`${styles['banner-subcategoria']}`}>
+                                        <Image src="/img/menu/papeleria_comercial_banner_1.png" alt="" width={300} height={300}/>
+                                </div>
+
+                                <div className={`${styles['galeria-subcategoria']}`}>
+                                        <Image src="/img/menu/papeleria_comercial_galeria_1.png" alt="" width={150} height={150}/>
+                                        <Image src="/img/menu/papeleria_comercial_galeria_2.png" alt="" width={150} height={150}/>
+                                        <Image src="/img/menu/papeleria_comercial_galeria_3.png" alt="" width={150} height={150}/>
+                                        <Image src="/img/menu/papeleria_comercial_galeria_4.png" alt="" width={150} height={150}/>
+                                </div>
+                            </div>
+
+
                         </div>
                 </div>
             </div>
@@ -425,3 +501,6 @@ export const Header:FC<Props> = () => {
 
   )
 }
+
+
+export default Header

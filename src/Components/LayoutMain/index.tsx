@@ -1,11 +1,11 @@
-import { FC, ReactNode, useContext } from 'react'
+'use client'
+import { FC, ReactNode } from 'react'
 import styles from './LayoutMain.module.scss'
-import { Header } from '../Header';
 import { Footer } from '../Footer';
 import { ChatWidget } from '../MaterialZ/ChatWidget';
-import Head from 'next/head';
 import { CartMenu } from '../CartMenu';
-import { CartIcon } from '../MaterialZ/Icons';
+import dynamic from 'next/dynamic';
+import  HeaderFallback from '../HeaderFallback/HeaderFallback';
 
 interface Props {
     children: ReactNode
@@ -13,20 +13,12 @@ interface Props {
 
 export const LayoutMain: FC<Props> = ( { children } ) => {
 
-
+  const Header = dynamic(()=> import('../../Components/Header'),{
+    loading: ()=> <HeaderFallback/>
+  })
 
   return (
     <>
-      <Head>
-        <title>Impulso Publicitario</title>
-        <meta name="description" content="Expertos en la producción de todo tipo de material publicitario impreso" />
-        <link rel="icon" href="/icon_impulso.png" />
-
-        <meta property='og:title' content='Impulso Publicitario'/>
-        <meta property='og:description' content='Agencia de Publicidad en la ciudad de Santiago, ¡Tu marca en las mejores manos!'/>
-        <meta property='og:url' content='https://impulsopublicitario.cl' />
-        <meta property="og:type" content="website" />
-      </Head>
 
     <Header/>
     <CartMenu/>
