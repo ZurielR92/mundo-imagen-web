@@ -22,7 +22,7 @@ const pacifico = Pacifico({
 
 export const metadata: Metadata = {
   title: 'Mundo Imagen | Litografía en Medellín',
-  manifest:'/manifest.json',
+  description: 'Ofrecemos servicios de litografía y publicidad en Medellín. Impresión de calidad, diseño gráfico y soluciones publicitarias para tu negocio. ¡Contáctanos hoy!';
   themeColor:'#fff',
   icons:{
     apple:'/icon-512x512.png',

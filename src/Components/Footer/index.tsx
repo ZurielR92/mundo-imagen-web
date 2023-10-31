@@ -23,7 +23,7 @@ export const Footer:FC<Props> = () => {
                     </p>
                 </div>
                 <nav>
-                    <h3>Nuestros Servicios</h3>
+                    <h2>Nuestros Servicios</h2>
                     <ul>
                         <li>
                             <Link href={'/servicios/publicidad_impresa'}>Publicidad Impresa</Link>
