@@ -24,29 +24,17 @@ export const formatPeso = ( ammount:number ) => {
 
 export const CategoriesCard:FC<Props> = ({ category }) => {
 
-
-
-
     return (
 
-        <div className={styles.card}>
-        <div className={styles['img-box']}>
-          <Image src={category.displayImage} width={370} height={270} alt={category.altDisplay}/>
-        </div>
-        <div className={styles['text-box']}>
-          <Link href={category.url}>
-              <h2>{category.name}</h2>
-          </Link>
-          <div className={styles['meta-info']}>
-            <p>
-              {category.minQuantity <= 1 ? 'Desde ' : `${category.minQuantity} unidades desde `}<span>{ formatPeso(category.basicPrice) }</span>
-            </p>
+      <div className={styles.card2}>
+        <Link href={category.url}>
+          <div className={styles['img-box2']}>
+            <Image src={category.displayImage} fill alt={category.altDisplay}/>
+          </div>  
+          <div className={styles.title}>
+            {category.name}
           </div>
-          <p>{ category.shortDescription }</p>
-          <Link className={ styles['read-more'] } href={ category.url }>
-            Ver mas...
-          </Link>
-        </div>
+        </Link>
       </div>
     )
 

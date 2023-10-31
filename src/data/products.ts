@@ -372,6 +372,83 @@ export const categoriesList: ICategory[] = [
             },
         ]
     },
+
+
+    {
+        code: '0108',
+        type: 'Publicidad Impresa',
+        name: 'Plegables',
+        shortDescription: 'Descripción de plegables',
+        description: '',
+        basicPrice: 70000,
+        minQuantity: 1000,
+        url: '/servicios/publicidad_impresa/plegable',
+        displayImage: '/img/products/publicidad_impresa/plegable.jpg',
+        altDisplay: 'Impresión y diseño de plegables en medellin',
+        gallery: [''],
+        products: [
+            {
+                title:'Plegables Ecologicos',
+                img: '/img/products/publicidad_impresa/plegable_ecologico.jpg',
+                altImg:'Plegables ecologicos en medellin',
+                shortDescription:'',
+                priceConfig: {
+                    priceType: 'Precio Fijo',
+                    price: 80000,
+                    queantity: 1000,
+                    quantities: [
+                        '1000','2000','3000','6000','10000'
+                    ]
+                }
+            },
+            {
+                title:'Plegables a Dos Cuerpos',
+                img: '/img/products/publicidad_impresa/plegable_dos_cuerpos.jpg',
+                altImg:'Plegables a dos cuerpos en medellin',
+                shortDescription:'',
+                priceConfig: {
+                    priceType: 'Precio Fijo',
+                    price: 80000,
+                    queantity: 1000,
+                    quantities: [
+                        '1000','2000','3000','6000','10000'
+                    ]
+                }
+            },
+            {
+                title:'Plegables a Tres Cuerpos',
+                img: '/img/products/publicidad_impresa/plegable_tres_cuerpos.jpg',
+                altImg:'Plegables a tres cuerpos en medellin',
+                shortDescription:'',
+                priceConfig: {
+                    priceType: 'Precio Fijo',
+                    price: 80000,
+                    queantity: 1000,
+                    quantities: [
+                        '1000','2000','3000','6000','10000'
+                    ]
+                }
+            },
+            {
+                title:'Plegables Troquelados',
+                img: '/img/products/publicidad_impresa/plegable_troquelado.jpg',
+                altImg:'Plegables troquelados en medellin',
+                shortDescription:'',
+                priceConfig: {
+                    priceType: 'Precio Fijo',
+                    price: 80000,
+                    queantity: 1000,
+                    quantities: [
+                        '1000','2000','3000','6000','10000'
+                    ]
+                }
+            },
+        ]
+    },
+
+
+
+
     {
         code: '0201',
         type: 'Papeleria Comercial',
@@ -495,7 +572,7 @@ export const categoriesList: ICategory[] = [
         basicPrice: 200000,
         minQuantity: 100,
         url: '/servicios/papeleria_comercial/carpetas_personalizadas',
-        displayImage: '/img/products/papealeria_comercial/carpetas_personalizadas.jpg',
+        displayImage: '/img/products/papeleria_comercial/carpetas_personalizadas.jpg',
         altDisplay: 'Impresión de carpetas personalizadas en medellín',
         gallery: [''],
         products: [

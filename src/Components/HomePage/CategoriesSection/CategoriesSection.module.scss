@@ -2,16 +2,19 @@
 
 .grid {
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
     margin: auto;
     text-align: center;
     gap: 15px;
+
     @include media-up( md ) {
-        grid-template-columns: 1fr 1fr;
-    }
-    @include media-up( xl ) {
         grid-template-columns: 1fr 1fr 1fr;
-        max-width: 1200px;
-        gap: 30px;
     }
+
+    @include media-up( xl ) {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        max-width: 1200px;
+        gap: 15px;
+    }
+
 }
