@@ -1,11 +1,11 @@
-import { FC } from 'react'
+import { FC, ReactNode } from 'react'
 
 //Importacion de estilos
 import styles from './TitleSection.module.scss'
 
 //Propiedades que recibe el componente
 interface Props {
-    title: string
+    title: string | ReactNode
     subtitle: string
 }
 
