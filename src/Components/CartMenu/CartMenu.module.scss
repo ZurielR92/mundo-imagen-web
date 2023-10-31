@@ -157,11 +157,13 @@
 
 .close {
     cursor: pointer;
-    color: $error;
+    color: white;
+    background: $error;
     margin-right: 15px;
     padding: 5px;
     transition: all .2s ease-in-out;
     font-size: 17px;
+    font-weight: 600;
     border-radius: 50px;
     &:hover {
         background: $error;
