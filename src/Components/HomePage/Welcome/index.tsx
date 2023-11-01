@@ -13,7 +13,7 @@ export const WelcomeHome:FC<Props> = () => {
     return (
         <div className={ styles.welcomehome }>
             <div className={ styles.clip }></div>
-            
+
             <div className={ styles.grid }>
                 <div>
                     <span>Bienvenidos a Grupo Mundo Imagen</span>
@@ -30,7 +30,7 @@ export const WelcomeHome:FC<Props> = () => {
                 </div>
 
                 <div className={styles.imageContainer}>
-                    <Image src={'/img/welcome.webp'} width={400} height={390} alt='Bienvenidos a Grupo Mundo Imagen'/>
+                    <Image src={'/img/welcome.webp'} width={400} height={390} priority alt='Bienvenidos a Grupo Mundo Imagen'/>
                 </div>
 
             </div>

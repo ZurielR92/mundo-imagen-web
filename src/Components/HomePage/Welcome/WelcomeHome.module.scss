@@ -61,7 +61,7 @@
                 background-color: rgba(255,255,255,.8);
                 //valores que cambian en la media query
                 font-size: 13px;
-                color: darken( $resalt, 10% );
+                color: darken( $primary, 10% );
                 @include media-up( xs ) {
                     font-size: 20px;
                 }
