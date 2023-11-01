@@ -1581,7 +1581,7 @@ export const categoriesList: ICategory[] = [
         description: 'dfjsdfsd',
         basicPrice: 25000,
         minQuantity: 5,
-        url: '/servicios/souvenirs_publicitarios/camisetas_personalizadas',
+        url: '/servicios/promocionales/camisetas_personalizadas',
         displayImage: '/img/products/souvenirs_publicitarios/camiseta.jpg',
         altDisplay: 'Camisetas personalizadas en santiago',
         gallery: [''],
