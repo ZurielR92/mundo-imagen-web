@@ -5,9 +5,8 @@ import { ContextWrapper } from '@/context'
 import { Footer } from '@/Components/Footer'
 import { ChatWidget } from '@/Components/MaterialZ/ChatWidget'
 import { CartMenu } from '@/Components/CartMenu'
-import HeaderDynamic from '@/Components/HeaderDynamic/HeaderDynamic'
+import Header from '@/Components/Header'
 
-const inter = Inter({ subsets: ['latin'] })
 const rubik = Rubik({
   subsets:['latin'],
   display:'swap',
@@ -44,7 +43,7 @@ export default function RootLayout({
     <html lang="es">
       <body className={`${rubik.variable} ${pacifico.variable}`}>
         <ContextWrapper>
-          <HeaderDynamic/>
+          <Header/>
           <CartMenu/>
           {children}
           <ChatWidget/>

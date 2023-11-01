@@ -5,8 +5,7 @@ import HeaderFallback from "../HeaderFallback/HeaderFallback"
 
 const HeaderDynamic = () => {
     const Header = dynamic(()=> import ('../Header/index'),{
-        loading:()=> <HeaderFallback/>,
-        ssr:false
+        loading:()=> <HeaderFallback/>
     })
     return <Header/>
 }
