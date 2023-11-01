@@ -12,7 +12,6 @@ interface Props {
 export const WelcomeHome:FC<Props> = () => {
     return (
         <div className={ styles.welcomehome }>
-            <Image src={ '/img/welcome.jpg' } fill alt='' priority/>
             <div className={ styles.clip }></div>
             <div className={ styles.background }></div>
             <div className={ styles.grid }>

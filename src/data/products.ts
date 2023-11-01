@@ -938,18 +938,18 @@ export const categoriesList: ICategory[] = [
     {
         code: '0404',
         type: 'Publicidad Exterior',
-        name: 'Palomas',
+        name: 'Rompetráficos',
         shortDescription: 'Excelente elemento publicitarios para llamar la atencion de quienes transiten cerca a tu espacio, las manejamos a variedades de tamaños y acabados',
         description: 'dfjsdfsd',
         basicPrice: 25000,
         minQuantity: 1,
         url: '/servicios/publicidad_exterior/palomas',
         displayImage: '/img/products/publicidad_exterior/paloma.jpg',
-        altDisplay: 'Diseño e impresión de palomas en santiago',
+        altDisplay: 'Diseño e impresión de Rompetráficos en medellín',
         gallery: [''],
         products: [
             {
-                title:'Paloma en Madera',
+                title:'Rompetráfico en Madera',
                 img: '/img/products/publicidad_exterior/paloma_madera.jpg',
                 altImg:'Paloma de madera en santiago',
                 shortDescription:'',
@@ -960,7 +960,7 @@ export const categoriesList: ICategory[] = [
                 }
             },
             {
-                title:'Paloma en Metal',
+                title:'Rompetráfico en Metal',
                 img: '/img/products/publicidad_exterior/paloma_metal.jpg',
                 altImg:'Paloma de metal en santiago',
                 shortDescription:'',
@@ -971,7 +971,7 @@ export const categoriesList: ICategory[] = [
                 }
             },
             {
-                title:'Paloma con Marco',
+                title:'Rompetrafico con Marco',
                 img: '/img/products/publicidad_exterior/paloma_marco.jpg',
                 altImg:'Paloma con marco en santiago',
                 shortDescription:'',
@@ -982,7 +982,7 @@ export const categoriesList: ICategory[] = [
                 }
             },
             {
-                title:'Paloma Tipo Bastidor',
+                title:'Rompetráfico Tipo Bastidor',
                 img: '/img/products/publicidad_exterior/paloma_bastidor.jpg',
                 altImg:'Paloma tipo bastidor en santiago',
                 shortDescription:'', 
