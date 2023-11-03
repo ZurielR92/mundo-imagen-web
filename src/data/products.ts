@@ -382,7 +382,7 @@ export const categoriesList: ICategory[] = [
         description: '',
         basicPrice: 70000,
         minQuantity: 1000,
-        url: '/servicios/publicidad_impresa/plegable',
+        url: '/servicios/publicidad_impresa/plegables',
         displayImage: '/img/products/publicidad_impresa/plegable.jpg',
         altDisplay: 'Impresión y diseño de plegables en medellin',
         gallery: [''],
@@ -943,7 +943,7 @@ export const categoriesList: ICategory[] = [
         description: 'dfjsdfsd',
         basicPrice: 25000,
         minQuantity: 1,
-        url: '/servicios/publicidad_exterior/palomas',
+        url: '/servicios/publicidad_exterior/rompetraficos',
         displayImage: '/img/products/publicidad_exterior/paloma.jpg',
         altDisplay: 'Diseño e impresión de Rompetráficos en medellín',
         gallery: [''],
@@ -993,7 +993,7 @@ export const categoriesList: ICategory[] = [
                 }
             },
             {
-                title:'Paloma Tablero',
+                title:'Rompetráfico Tablero',
                 img: '/img/products/publicidad_exterior/paloma_tablero.jpg',
                 altImg:'Paloma tablero en santiago',
                 shortDescription:'', 
@@ -1307,7 +1307,7 @@ export const categoriesList: ICategory[] = [
         description: 'dfjsdfsd',
         basicPrice: 25000,
         minQuantity: 5,
-        url: '/servicios/publicidad_exterior/senalizacion',
+        url: '/servicios/gran_formato/senalizacion',
         displayImage: '/img/products/gran_formato/senalizacion.jpg',
         altDisplay: 'Impresión y diseño de señalicación en medellín',
         gallery: [''],
@@ -1375,20 +1375,20 @@ export const categoriesList: ICategory[] = [
     },
     {
         code: '0601',
-        type: 'Souvenirs Publicitarios',
+        type: 'Promocionales',
         name: 'Lapiceros',
         shortDescription: 'zzz...',
         description: 'dfjsdfsd',
         basicPrice: 25000,
         minQuantity: 5,
-        url: '/servicios/souvenirs_publicitarios/lapiceros_personalizados',
-        displayImage: '/img/products/souvenirs_publicitarios/lapicero.jpg',
+        url: '/servicios/promocionales/lapiceros_personalizados',
+        displayImage: '/img/products/promocionales/lapicero.jpg',
         altDisplay: 'Lapiceros personalizados en santiago',
         gallery: [''],
         products: [
             {
                 title:'Lapicero Plastico',
-                img: '/img/products/souvenirs_publicitarios/lapicero_plastico.jpg',
+                img: '/img/products/promocionales/lapicero_plastico.jpg',
                 altImg:'Lapicero plastico personalizado en santiago',
                 shortDescription:'',
                 priceConfig: {
@@ -1402,7 +1402,7 @@ export const categoriesList: ICategory[] = [
             },
             {
                 title:'Lapicero Metalico',
-                img: '/img/products/souvenirs_publicitarios/lapicero_metalico.jpg',
+                img: '/img/products/promocionales/lapicero_metalico.jpg',
                 altImg:'Lapicero metalico personalizado en santiago',
                 shortDescription:'',
                 priceConfig: {
@@ -1416,7 +1416,7 @@ export const categoriesList: ICategory[] = [
             },
             {
                 title:'Lapicero Ecológico',
-                img: '/img/products/souvenirs_publicitarios/lapicero_ecologico.jpg',
+                img: '/img/products/promocionales/lapicero_ecologico.jpg',
                 altImg:'Lapicero ecologico personalizado en santiago',
                 shortDescription:'',
                 priceConfig: {
@@ -1432,20 +1432,20 @@ export const categoriesList: ICategory[] = [
     },
     {
         code: '0602',
-        type: 'Souvenirs Publicitarios',
+        type: 'Promocionales',
         name: 'Laveros Personalizados',
         shortDescription: 'zzz...',
         description: 'dfjsdfsd',
         basicPrice: 25000,
         minQuantity: 5,
-        url: '/servicios/souvenirs_publicitarios/llaveros_personalizados',
-        displayImage: '/img/products/souvenirs_publicitarios/llavero.jpg',
+        url: '/servicios/promocionales/llaveros_personalizados',
+        displayImage: '/img/products/promocionales/llavero.jpg',
         altDisplay: 'Llaveros personalizados en santiago',
         gallery: [''],
         products: [
             {
                 title:'Llaveros en Acrílico Grabado',
-                img: '/img/products/souvenirs_publicitarios/llavero_acrilico_grabado.jpg',
+                img: '/img/products/promocionales/llavero_acrilico_grabado.jpg',
                 altImg:'Llavero de acrilico grabado en santiago',
                 shortDescription:'',
                 priceConfig: {
@@ -1459,7 +1459,7 @@ export const categoriesList: ICategory[] = [
             },
             {
                 title:'Llaveros en Teslin Laminado',
-                img: '/img/products/souvenirs_publicitarios/llavero_teslin.jpg',
+                img: '/img/products/promocionales/llavero_teslin.jpg',
                 altImg:'Llavero de teslin laminado en santiago',
                 shortDescription:'',
                 priceConfig: {
@@ -1475,20 +1475,20 @@ export const categoriesList: ICategory[] = [
     },
     {
         code: '0603',
-        type: 'Souvenirs Publicitarios',
+        type: 'Promocionales',
         name: 'Termos',
         shortDescription: 'zzz...',
         description: 'dfjsdfsd',
         basicPrice: 25000,
         minQuantity: 5,
-        url: '/servicios/souvenirs_publicitarios/termos',
-        displayImage: '/img/products/souvenirs_publicitarios/termo.jpg',
+        url: '/servicios/promocionales/termos',
+        displayImage: '/img/products/promocionales/termo.jpg',
         altDisplay: 'Termos personalizados en santiago',
         gallery: [''],
         products: [
             {
                 title:'Termo Blanco Personalizado',
-                img: '/img/products/souvenirs_publicitarios/termo_blanco.jpg',
+                img: '/img/products/promocionales/termo_blanco.jpg',
                 altImg:'Termo blanco personalizado en santiago',
                 shortDescription:'',
                 priceConfig: {
@@ -1502,7 +1502,7 @@ export const categoriesList: ICategory[] = [
             },
             {
                 title:'Termo Metalizado Personalizado',
-                img: '/img/products/souvenirs_publicitarios/termo_metalizado.jpg',
+                img: '/img/products/promocionales/termo_metalizado.jpg',
                 altImg:'Termo metalizado personalizado en santiago',
                 shortDescription:'',
                 priceConfig: {
@@ -1518,20 +1518,20 @@ export const categoriesList: ICategory[] = [
     },
     {
         code: '0604',
-        type: 'Souvenirs Publicitarios',
+        type: 'Promocionales',
         name: 'Mugs Personalizados',
         shortDescription: 'zzz...',
         description: 'dfjsdfsd',
         basicPrice: 25000,
         minQuantity: 5,
-        url: '/servicios/souvenirs_publicitarios/mugs',
-        displayImage: '/img/products/souvenirs_publicitarios/mug.jpg',
+        url: '/servicios/promocionales/mugs',
+        displayImage: '/img/products/promocionales/mug.jpg',
         altDisplay: 'Mugs personalizados en santiago',
         gallery: [''],
         products: [
             {
                 title:'Mug Sencillo',
-                img: '/img/products/souvenirs_publicitarios/mug_sencillo.jpg',
+                img: '/img/products/promocionales/mug_sencillo.jpg',
                 altImg:'Mug personalizado en santiago',
                 shortDescription:'',
                 priceConfig: {
@@ -1545,7 +1545,7 @@ export const categoriesList: ICategory[] = [
             },
             {
                 title:'Mug Magico',
-                img: '/img/products/souvenirs_publicitarios/mug_magico.jpg',
+                img: '/img/products/promocionales/mug_magico.jpg',
                 altImg:'Mug magico personalizado en santiago',
                 shortDescription:'',
                 priceConfig: {
@@ -1559,7 +1559,7 @@ export const categoriesList: ICategory[] = [
             },
             {
                 title:'Mug con Cuchara',
-                img: '/img/products/souvenirs_publicitarios/mug_cuchara.jpg',
+                img: '/img/products/promocionales/mug_cuchara.jpg',
                 altImg:'Mug con cuchara personalizado en santiago',
                 shortDescription:'',
                 priceConfig: {
@@ -1575,20 +1575,20 @@ export const categoriesList: ICategory[] = [
     },
     {
         code: '0605',
-        type: 'Souvenirs Publicitarios',
+        type: 'Promocionales',
         name: 'Camisetas Personalizadas',
         shortDescription: 'Bien sea para uso personal o para tu empresa, las camisetas personalizadas haran que tu mensaje o marca y llegue a mas personas y a la vez proyecte una imagen de organización.',
         description: 'dfjsdfsd',
         basicPrice: 25000,
         minQuantity: 5,
         url: '/servicios/promocionales/camisetas_personalizadas',
-        displayImage: '/img/products/souvenirs_publicitarios/camiseta.jpg',
+        displayImage: '/img/products/promocionales/camiseta.jpg',
         altDisplay: 'Camisetas personalizadas en santiago',
         gallery: [''],
         products: [
             {
                 title:'Camiseta Sencilla',
-                img: '/img/products/souvenirs_publicitarios/camiseta_sencilla.jpg',
+                img: '/img/products/promocionales/camiseta_sencilla.jpg',
                 altImg:'Camisetas sencillas personalizadas en santiago',
                 shortDescription:'',
                 priceConfig: {
@@ -1602,7 +1602,7 @@ export const categoriesList: ICategory[] = [
             },
             {
                 title:'Camiseta Tipo Polo',
-                img: '/img/products/souvenirs_publicitarios/camiseta_polo.jpg',
+                img: '/img/products/promocionales/camiseta_polo.jpg',
                 altImg:'Camisetas tipo polo personalizadas en santiago',
                 shortDescription:'',
                 priceConfig: {
@@ -1616,7 +1616,7 @@ export const categoriesList: ICategory[] = [
             },
             {
                 title:'Poleron',
-                img: '/img/products/souvenirs_publicitarios/camiseta_poleron.jpg',
+                img: '/img/products/promocionales/camiseta_poleron.jpg',
                 altImg:'Poleron personalizado en santiago',
                 shortDescription:'',
                 priceConfig: {
@@ -1711,6 +1711,49 @@ export const categoriesList: ICategory[] = [
                     queantity: 1000,
                     quantities: [
                         '10','20','50','100','200','500','1000','2000'
+                    ]
+                }
+            },
+        ]
+    },
+    {
+        code: '0705',
+        type: 'Cajas y Empaques',
+        name: 'Bolsas de Papel',
+        shortDescription: 'Descripción de bolsas de papel',
+        description: 'dfjsdfsd',
+        basicPrice: 500000,
+        minQuantity: 100,
+        url: '/servicios/cajas_y_empaques/bolsas_de_papel',
+        displayImage: '/img/products/cajas_empaques/bolsa_papel.jpg',
+        altDisplay: 'Bolsas de papel personalizadas en medellín',
+        gallery: [''],
+        products: [
+            {
+                title:'Bolsas con Manigueta',
+                img: '/img/products/cajas_empaques/bolsa_papel_manigueta.jpg',
+                altImg:'Bolsa de papel con manigueta en medellin',
+                shortDescription:'',
+                priceConfig: {
+                    priceType: 'Precio Fijo',
+                    price: 80000,
+                    queantity: 1000,
+                    quantities: [
+                        '100','200','500','1000','2000','5000','10000'
+                    ]
+                }
+            },
+            {
+                title:'Bolsa para Comestibles',
+                img: '/img/products/cajas_empaques/bolsa_papel_comestibles.jpg',
+                altImg:'Bolsa de papel para comestibles en medellín',
+                shortDescription:'',
+                priceConfig: {
+                    priceType: 'Precio Fijo',
+                    price: 80000,
+                    queantity: 1000,
+                    quantities: [
+                        '100','200','500','1000','2000','5000','10000'
                     ]
                 }
             },

@@ -16,7 +16,7 @@ interface Props {
 export const CategoriesSection:FC<Props> = ({ categories }) => {
     return (
         <>
-        <Section invert style={{padding:'50px 0'}} colorClipTop={'primary'} colorClipBottom='resalt' >
+        <Section invert style={{padding:'100px 0'}} colorClipTop={'primary'} colorClipBottom='resalt' >
             <TitleSection title={<>Algunos de nuestros <strong>Productos</strong></>} subtitle='Conoce nuestro amplio catalogo'/>
             <div className={ styles.grid }>
                 {

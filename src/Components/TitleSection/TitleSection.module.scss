@@ -2,6 +2,15 @@
 
 .titlesection {
     text-align: center;
+    &.white {
+        background: $primary;
+        .subtitle {
+            color: $resalt;
+        }
+        .title {
+            color: white;
+        }
+    }
     .subtitle {
         font-family: var(--font-pacifico);
         color: #595959;
@@ -19,11 +28,11 @@
         font-size: 40px;
         line-height: 54px;
         letter-spacing: -3px;
-        margin-bottom: 20px;
+        padding-bottom: 20px;
         @include media-up( md ) {
             margin-top: 10px;
             font-size: 60px;
-            margin-bottom: 40px;
+            padding-bottom: 40px;
         }
         strong {
             position: relative;

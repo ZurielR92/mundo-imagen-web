@@ -9,7 +9,7 @@ import Image from "next/image";
 
 export const CustomersSection:FC = () => {
     return (
-        <Section style={{padding:'50px 0'}} colorClipTop={'resalt'} colorClipBottom='dark'>
+        <Section style={{padding:'150px 0'}} colorClipTop={'resalt'} colorClipBottom='dark'>
             <TitleSection title={<>Nuestros <strong>clientes</strong> satisfechos</>} subtitle="Colaboraciones exitosas que hablan por si mismas"/>
             <div className={styles.grid}>
                 <Image src={'/img/customers/cliente-aceros-turia.png'} width={100} height={100} alt="Logo cliente aceros turia"/>

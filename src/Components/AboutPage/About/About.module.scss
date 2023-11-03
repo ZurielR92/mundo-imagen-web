@@ -1,29 +1,36 @@
-@import '/styles/theme.scss';
+@import '@/styles/theme.scss';
 
 .grid {
-    width: 1200px;
+    max-width: 1200px;
     margin: auto;
     height: 100vh;
     display: grid;
     grid-template-columns: 1fr;
-    @include media-up( md ) {
-        gap: 30px;
+    gap: 30px;
+    @include media-up( lg ) {
         grid-template-columns: 1fr 1fr;
     }
     > :nth-child( 1 ) {
         position: relative;
+        margin-top: 40px;
         img {
             object-fit: contain;
+        }
+        @include media-up( lg ) {
+            margin-top: 0px;
         }
     }
     > :nth-child( 2 ) {
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        justify-content: start;
         p {
             color: $textLight;
             font-size: 18px;
             line-height: 30px;           
+        }
+        @include media-up( lg ) {
+            justify-content: center;
         }
     }
 }

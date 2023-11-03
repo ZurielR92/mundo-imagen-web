@@ -6,13 +6,20 @@ import { IProduct } from '../../../../interfaces/Product'
 import { Section } from '../../../../Components/Section'
 import Link from 'next/link'
 
-const CarpetasPersonalizadasPage = () => {
+interface Props {
+    productList: IProduct[]
+    FAQsList: { ask:string, response:string }[]
+  }
+
+
+const AgendasPersonalizadasPage = () => {
 
     const list: IProduct[] = []
     const FAQs:{ask:string, response:string}[]=[]
   
+    
     categoriesList.find(cat => {
-      if (cat.code === '0203') {
+      if (cat.code === '0705') {
         cat.FAQs?.forEach(element => {
           FAQs.push(element)
         })
@@ -25,21 +32,25 @@ const CarpetasPersonalizadasPage = () => {
 
     return (
 
+
         <>
-        <TitlePage title='Carpetas Personalizadas en Medellín'>
-            <Link href={'/'}>Inicio</Link> • <Link href={ '/servicios' } >Servicios</Link> • <Link href={ '/servicios/papeleria_comercial' }>Papeleria Comercial</Link>
+        
+        <TitlePage title='Bolsas de Papel en Medellín'>
+            <Link href={'/'}>Inicio</Link> • <Link href={ '/servicios' } >Servicios</Link> • <Link href={ '/servicios/cajas_y_empaques' }>Cajas & Empaques</Link>
         </TitlePage>
 
         <Section colorClipTop={'resalt'} invert style={{ paddingTop:100, paddingBottom:100 }} colorClipBottom='dark'>
+
             <ProductsGrid
-                subtitle='¿Que carpetas necesito para mi empresa?'
-                title='Conoce nuestra variedad de Carpetas'
+                subtitle='¿Cual bolsa necesito para mi empresa?'
+                title='Conoce nuestra variedad de Bolsas de Papel'
                 products={list}
             />
+
         </Section>
+
         </>
     )
-
 }
 
-export default CarpetasPersonalizadasPage
+export default AgendasPersonalizadasPage

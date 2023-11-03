@@ -1,0 +1,34 @@
+@import '@/styles/theme.scss';
+
+.whyUs {
+    background: $primary;
+    color: white;
+    padding: 50px 0;
+    p {
+        max-width: 810px;
+        margin: auto;
+        text-align: center;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 25px;
+        padding: 0px 20px;
+    }
+    .grid {
+        margin: auto;
+        margin-top: 40px;
+        max-width: 900px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        div {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 15px;
+            text-align: center;
+        }
+        @include media-up( sm ) {
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+        }
+    }
+}

@@ -6,13 +6,13 @@ import { IProduct } from '../../../../interfaces/Product'
 import { Section } from '../../../../Components/Section'
 import Link from 'next/link'
 
-const CarpetasPersonalizadasPage = () => {
+const SenalizacionPage = () => {
 
     const list: IProduct[] = []
     const FAQs:{ask:string, response:string}[]=[]
   
     categoriesList.find(cat => {
-      if (cat.code === '0203') {
+      if (cat.code === '0505') {
         cat.FAQs?.forEach(element => {
           FAQs.push(element)
         })
@@ -26,14 +26,14 @@ const CarpetasPersonalizadasPage = () => {
     return (
 
         <>
-        <TitlePage title='Carpetas Personalizadas en Medellín'>
-            <Link href={'/'}>Inicio</Link> • <Link href={ '/servicios' } >Servicios</Link> • <Link href={ '/servicios/papeleria_comercial' }>Papeleria Comercial</Link>
+        <TitlePage title='Señalización en Medellín'>
+            <Link href={'/'}>Inicio</Link> • <Link href={ '/servicios' } >Servicios</Link> • <Link href={ '/servicios/cajas_y_empaques' }>Cajas & Empaques</Link>
         </TitlePage>
 
         <Section colorClipTop={'resalt'} invert style={{ paddingTop:100, paddingBottom:100 }} colorClipBottom='dark'>
             <ProductsGrid
-                subtitle='¿Que carpetas necesito para mi empresa?'
-                title='Conoce nuestra variedad de Carpetas'
+                subtitle='¿Cual tipo de señalización necesito para mi empresa?'
+                title='Conoce nuestra variedad de Señalizaciones'
                 products={list}
             />
         </Section>
@@ -42,4 +42,4 @@ const CarpetasPersonalizadasPage = () => {
 
 }
 
-export default CarpetasPersonalizadasPage
+export default SenalizacionPage

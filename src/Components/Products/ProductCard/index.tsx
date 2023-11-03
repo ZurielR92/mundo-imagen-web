@@ -1,3 +1,4 @@
+'use client'
 import Image from 'next/image'
 import { ChangeEvent, FC, useState, useRef, useContext } from 'react';
 import styles from './ProductCard.module.scss'

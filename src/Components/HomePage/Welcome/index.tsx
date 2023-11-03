@@ -30,7 +30,7 @@ export const WelcomeHome:FC<Props> = () => {
                 </div>
 
                 <div className={styles.imageContainer}>
-                    <Image src={'/img/welcome.webp'} width={400} height={390} priority alt='Bienvenidos a Grupo Mundo Imagen'/>
+                    <Image src={'/img/welcome3.webp'} width={515} height={502} priority alt='Bienvenidos a Grupo Mundo Imagen'/>
                 </div>
 
             </div>

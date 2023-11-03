@@ -7,12 +7,13 @@ import styles from './TitleSection.module.scss'
 interface Props {
     title: string | ReactNode
     subtitle: string
+    mode?: 'default' | 'white'
 }
 
 
-export const TitleSection:FC<Props> = ({ title, subtitle }) => {
+export const TitleSection:FC<Props> = ({ title, subtitle, mode = 'default' }) => {
     return (
-        <div className={ styles.titlesection }>
+        <div className={ `${styles.titlesection} ${ mode === 'white' ? styles.white : '' }` }>
 
             <span className={ styles.subtitle }>{ subtitle }</span>
             <h1 className={ styles.title }>{ title }</h1>

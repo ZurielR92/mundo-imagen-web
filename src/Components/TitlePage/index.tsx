@@ -1,4 +1,3 @@
-import Link from 'next/link'
 import { FC, ReactNode } from 'react'
 
 //Importacion de estilos
@@ -17,7 +16,7 @@ export const TitlePage:FC<Props> = ({ title, children }) => {
 
             <h1>{title}</h1>
             <div className={ styles.breadcumbs }>
-                <Link href={'/'}>Inicio</Link> - { children } - { title }
+                { children } • { title.slice(0,-12) }
             </div>
 
         </section>

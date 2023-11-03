@@ -6,13 +6,20 @@ import { IProduct } from '../../../../interfaces/Product'
 import { Section } from '../../../../Components/Section'
 import Link from 'next/link'
 
-const CarpetasPersonalizadasPage = () => {
+interface Props {
+    productList: IProduct[]
+    FAQsList: { ask:string, response:string }[]
+  }
+
+
+const PlegablesPage = () => {
 
     const list: IProduct[] = []
     const FAQs:{ask:string, response:string}[]=[]
   
+    
     categoriesList.find(cat => {
-      if (cat.code === '0203') {
+      if (cat.code === '0108') {
         cat.FAQs?.forEach(element => {
           FAQs.push(element)
         })
@@ -25,21 +32,25 @@ const CarpetasPersonalizadasPage = () => {
 
     return (
 
+
         <>
-        <TitlePage title='Carpetas Personalizadas en Medellín'>
-            <Link href={'/'}>Inicio</Link> • <Link href={ '/servicios' } >Servicios</Link> • <Link href={ '/servicios/papeleria_comercial' }>Papeleria Comercial</Link>
+        
+        <TitlePage title='Plegables en Medellín'>
+            <Link href={'/'}>Inicio</Link> • <Link href={ '/servicios' } >Servicios</Link> • <Link href={ '/servicios/cajas_y_empaques' }>Cajas & Empaques</Link>
         </TitlePage>
 
         <Section colorClipTop={'resalt'} invert style={{ paddingTop:100, paddingBottom:100 }} colorClipBottom='dark'>
+
             <ProductsGrid
-                subtitle='¿Que carpetas necesito para mi empresa?'
-                title='Conoce nuestra variedad de Carpetas'
+                subtitle='¿Que tipo de plegable necesito para mi empresa?'
+                title='Conoce nuestra variedad de Plegables'
                 products={list}
             />
+
         </Section>
+
         </>
     )
-
 }
 
-export default CarpetasPersonalizadasPage
+export default PlegablesPage

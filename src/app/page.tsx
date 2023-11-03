@@ -3,13 +3,14 @@ import { CustomersSection } from '@/Components/HomePage/CustomersSection';
 import { WelcomeHome } from '@/Components/HomePage/Welcome'
 import { categoriesList } from '@/data/products';
 import { ICategory } from '@/interfaces';
+import { WhyUs } from './components/WhyUs';
 
 
 const getCategories = async () => {
   const listaCategorias: ICategory[] = [];
-  const codigos: string[] = [ '0701','0205','0203','0605','0501','0108','0404', '0405', '0506' ];
+  const codigos: string[] = [ '0701','0205','0108','0705','0203', '0105', '0501','0404', '0405', '0506', '0505', '0601',  ];
 
-  for (let p = 0; p < 9; p++) {
+  for (let p = 0; p < 12; p++) {
     categoriesList.find((obj, i) => {
       if (obj.code === codigos[p]) {
         listaCategorias.push(obj);
@@ -26,6 +27,7 @@ const HomePage = async () => {
     <main>
 
       <WelcomeHome/>
+      <WhyUs/>
       <CategoriesSection categories={categories}/>
       <CustomersSection/>
     </main>

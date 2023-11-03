@@ -1,7 +1,7 @@
-@import '/styles/theme.scss';
+@import '@/styles/theme.scss';
 
 .titlepage{
-    font-family: Rubik, Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family: var(--font-rubik);
     background: $extraLight;
     height: 120px;
     display: flex;
@@ -13,10 +13,11 @@
         height: 200px;
     }
     h1 {
-        padding: 0 20px;
+        padding: 30px 20px;
         width: 100%;
         font-size: 40px;
         color: $textDark;
+        color: #515151;
         max-width: 1300px;
         margin: auto;
         @include media-up( md ) {
@@ -28,6 +29,8 @@
         @include media-up( md ) {
             display: block;
             z-index: 999;
+            color: white;
+            font-weight: 500;
             position: absolute;
             background: $primary;
             padding: 20px 50px;
