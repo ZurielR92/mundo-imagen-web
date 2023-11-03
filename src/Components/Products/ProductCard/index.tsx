@@ -16,7 +16,7 @@ interface Props {
 
 export const ProductCard:FC<Props> = ( { img, altImg, title, shortDescription, priceConfig } ) => {
 
-  const { handleAddProduct } = useContext( DataContext )
+  const { handleAddProduct, vendor } = useContext( DataContext )
   const { toggleCart } = useContext( UIContext )
 
   const selector = useRef<HTMLSelectElement>(null);
@@ -46,13 +46,13 @@ export const ProductCard:FC<Props> = ( { img, altImg, title, shortDescription, p
     switch (priceConfig.priceType) {
       case 'Precio Fijo':
         window.open(
-          `https://api.whatsapp.com/send?phone=56946833575&text=Hola!%20estoy%20estoy%20interesado%20en%20${selector.current?.value}%20${title}`,'_blank'
+          `https://api.whatsapp.com/send?phone=57${vendor}&text=Hola!%20estoy%20estoy%20interesado%20en%20${selector.current?.value}%20${title}`,'_blank'
           )
         break;
 
       case 'Precio por Cm2':
         window.open(
-          `https://api.whatsapp.com/send?phone=56946833575&text=Hola!%20estoy%20estoy%20interesado%20en%20${quantity === '0' ? '1' : quantity}%20${title}%20de%20${width}x${height}cm`,'_blank'
+          `https://api.whatsapp.com/send?phone=57${vendor}&text=Hola!%20estoy%20estoy%20interesado%20en%20${quantity === '0' ? '1' : quantity}%20${title}%20de%20${width}x${height}cm`,'_blank'
           )
         break;
     }

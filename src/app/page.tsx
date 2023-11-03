@@ -4,6 +4,7 @@ import { WelcomeHome } from '@/Components/HomePage/Welcome'
 import { categoriesList } from '@/data/products';
 import { ICategory } from '@/interfaces';
 import { WhyUs } from './components/WhyUs';
+import { Services } from './components/Services';
 
 
 const getCategories = async () => {
@@ -21,18 +22,23 @@ const getCategories = async () => {
   return listaCategorias
 }
 
-const HomePage = async () => {
+interface Props {
+  searchParams:any
+}
+
+const HomePage = async ({ searchParams }:Props) => {
   const categories = await getCategories();
+  
   return (
     <main>
-
       <WelcomeHome/>
       <WhyUs/>
       <CategoriesSection categories={categories}/>
+      <Services/>
       <CustomersSection/>
     </main>
   )
 }
 
 
-export default HomePage
+export default HomePage;

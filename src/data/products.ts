@@ -95,13 +95,13 @@ export const categoriesList: ICategory[] = [
         description: '',
         basicPrice: 70000,
         minQuantity: 1000,
-        url: '/servicios/publicidad_impresa/flyers',
+        url: '/servicios/publicidad_impresa/volantes',
         displayImage: '/img/products/volantes.png',
         altDisplay: 'Impresión y diseño de flyers en santiago',
         gallery: [''],
         products: [
             {
-                title:'Flyers Full Color un Lado',
+                title:'Volantes Full Color un Lado',
                 img: '/img/products/publicidad_impresa/flyers_una_cara.jpg',
                 altImg:'Tarjetas de Presentación Brillo UV',
                 shortDescription:'',
@@ -115,7 +115,7 @@ export const categoriesList: ICategory[] = [
                 }
             },
             {
-                title:'Flyers Full Color Ambos Lados',
+                title:'Volantes Full Color Ambos Lados',
                 img: '/img/products/publicidad_impresa/flyers_dos_caras.jpg',
                 altImg:'Tarjetas de Presentación Brillo UV',
                 shortDescription:'',
@@ -1615,7 +1615,7 @@ export const categoriesList: ICategory[] = [
                 }
             },
             {
-                title:'Poleron',
+                title:'Buzo con Capucha',
                 img: '/img/products/promocionales/camiseta_poleron.jpg',
                 altImg:'Poleron personalizado en santiago',
                 shortDescription:'',

@@ -1,8 +1,10 @@
-import { FC } from 'react'
+'use client'
+import { FC, useContext } from 'react'
 import { Section } from '../../Section'
 
 //Importacion de estilos
 import styles from './ContactSection.module.scss'
+import { DataContext } from '@/context'
 
 //Propiedades que recibe el componente
 interface Props {
@@ -10,6 +12,7 @@ interface Props {
 
 
 export const ContactSection:FC<Props> = () => {
+    const { vendor } = useContext( DataContext );
     return (
         <>
             <Section style={{ padding:'40px 0' }} colorClipTop='resalt' colorClipBottom='dark'>
@@ -35,9 +38,9 @@ export const ContactSection:FC<Props> = () => {
                         <strong>Dirección:</strong>
                         <p>Carrera 45 # 30 - 45</p>
                         <strong>Teléfono:</strong>
-                        <p>+57 313 708 29 92</p>
+                        <p>+57 {vendor}</p>
                         <strong>Correo Electrónico</strong>
-                        <p>ventas@mundoimagen.com</p>
+                        <p>ventas@mundo-imagen.com</p>
                     </div>
 
                 </div>

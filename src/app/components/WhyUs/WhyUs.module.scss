@@ -26,6 +26,10 @@
             align-items: center;
             gap: 15px;
             text-align: center;
+            strong {
+                font-size: 18px;
+                font-weight: 500;
+            }
         }
         @include media-up( sm ) {
             grid-template-columns: 1fr 1fr 1fr 1fr;

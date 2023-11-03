@@ -170,7 +170,7 @@ const Header:FC<Props> = () => {
                             <span data-categoria='5'>Gran Formato <i className="fas fa-angle-right"></i></span>
                             <span data-categoria='6'>Promocionales <i className="fas fa-angle-right"></i></span>
                             <span data-categoria='8'>Cajas y Empaques<i className="fas fa-angle-right"></i></span>
-                            <span data-categoria='9'>Eventos<i className="fas fa-angle-right"></i></span>
+                            {/* <span data-categoria='9'>Eventos<i className="fas fa-angle-right"></i></span> */}
                             {/* <span data-categoria='7'>Diseño Gráfico <i className="fas fa-angle-right"></i></span> */}
                         </div>
 
@@ -192,8 +192,8 @@ const Header:FC<Props> = () => {
                                         <Link onClick={ handleToggleMenu } href={'/servicios/publicidad_impresa/tarjetas_de_presentacion'}>
                                             Tarjetas de Presentación
                                         </Link>
-                                        <Link onClick={ handleToggleMenu } href={'/servicios/publicidad_impresa/flyers'}>
-                                            Flyers
+                                        <Link onClick={ handleToggleMenu } href={'/servicios/publicidad_impresa/volantes'}>
+                                            Volantes
                                         </Link>
                                         <Link onClick={ handleToggleMenu } href={'/servicios/publicidad_impresa/afiches'}>
                                             Afiches
@@ -302,8 +302,8 @@ const Header:FC<Props> = () => {
                                         {/* <Link href={'/servicios/publicidad-exterior/vallas'}>
                                             Vallas
                                         </Link> */}
-                                        <Link onClick={ handleToggleMenu } href={'/servicios/publicidad_exterior/palomas'}>
-                                            Palomas
+                                        <Link onClick={ handleToggleMenu } href={'/servicios/publicidad_exterior/rompetraficos'}>
+                                            Rompetraficos
                                         </Link>
                                         <Link onClick={ handleToggleMenu } href={'/servicios/publicidad_exterior/bastidores'}>
                                             Bastidores
@@ -429,29 +429,29 @@ const Header:FC<Props> = () => {
                                         <Link onClick={ handleToggleMenu } href={'/servicios/cajas_y_empaques/cajas_plegadizas'}>
                                             Cajas Plegadizas
                                         </Link>
-                                        <Link onClick={ handleToggleMenu } href={'/servicios/cajas_y_empaques/tapa_y_base'}>
+                                        {/* <Link onClick={ handleToggleMenu } href={'/servicios/cajas_y_empaques/tapa_y_base'}>
                                             Tapa y Base
                                         </Link>
                                         <Link onClick={ handleToggleMenu } href={'/servicios/cajas_y_empaques/funda_y_base'}>
                                             Funda y Base
-                                        </Link>
+                                        </Link> */}
                                         <Link onClick={ handleToggleMenu } href={'/servicios/cajas_y_empaques/bolsas_de_papel'}>
                                             Bolsas de Papel
                                         </Link>
-                                        <Link onClick={ handleToggleMenu } href={'/servicios/cajas_y_empaques/bolsas_de_tela'}>
+                                        {/* <Link onClick={ handleToggleMenu } href={'/servicios/cajas_y_empaques/bolsas_de_tela'}>
                                             Bolsas de Tela
-                                        </Link>
+                                        </Link> */}
                                 </div>
 
                                 <div className={`${styles['banner-subcategoria']}`}>
-                                        <Image src="/img/menu/papeleria_comercial_banner_1.png" alt="" width={300} height={300}/>
+                                        <Image src="/img/menu/cajas_banner_1.jpg" alt="" width={300} height={300}/>
                                 </div>
 
                                 <div className={`${styles['galeria-subcategoria']}`}>
-                                        <Image src="/img/menu/papeleria_comercial_galeria_1.png" alt="" width={150} height={150}/>
-                                        <Image src="/img/menu/papeleria_comercial_galeria_2.png" alt="" width={150} height={150}/>
-                                        <Image src="/img/menu/papeleria_comercial_galeria_3.png" alt="" width={150} height={150}/>
-                                        <Image src="/img/menu/papeleria_comercial_galeria_4.png" alt="" width={150} height={150}/>
+                                        <Image src="/img/menu/cajas_galeria_1.jpg" alt="" width={150} height={150}/>
+                                        <Image src="/img/menu/cajas_galeria_2.jpg" alt="" width={150} height={150}/>
+                                        <Image src="/img/menu/cajas_galeria_3.jpg" alt="" width={150} height={150}/>
+                                        <Image src="/img/menu/cajas_galeria_4.jpg" alt="" width={150} height={150}/>
                                 </div>
                             </div>
 
@@ -459,7 +459,7 @@ const Header:FC<Props> = () => {
 
 
 
-                            <div className={`${styles.subcategoria} subcategoria`} data-categoria='9'>
+                            {/* <div className={`${styles.subcategoria} subcategoria`} data-categoria='9'>
                                 <div className={`${styles['enlaces-subcategoria']}`}>
                                     <button className={`${styles['btn-regresar']} btn-regresar`}><i className="fas fa-arrow-left"></i>Regresar</button>
                                     <h3 className={`${styles.subtitulo}`}>Eventos</h3>
@@ -487,7 +487,7 @@ const Header:FC<Props> = () => {
                                         <Image src="/img/menu/papeleria_comercial_galeria_3.png" alt="" width={150} height={150}/>
                                         <Image src="/img/menu/papeleria_comercial_galeria_4.png" alt="" width={150} height={150}/>
                                 </div>
-                            </div>
+                            </div> */}
 
 
                         </div>

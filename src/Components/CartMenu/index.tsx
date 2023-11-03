@@ -21,7 +21,7 @@ export const CartMenu:FC<Props> = ({ active }) => {
     const txtNameError = useRef<HTMLSpanElement>(null);
   
     //IMPORTACIONES DE LOS CONTEXTOS
-    const { products, handleRemoveProduct } = useContext( DataContext )
+    const { products, handleRemoveProduct, vendor } = useContext( DataContext )
     const { toggleCart, isShowCart } = useContext(UIContext)
   
     //METODOS
@@ -34,7 +34,7 @@ export const CartMenu:FC<Props> = ({ active }) => {
         return;
       }
   
-      message = `https://api.whatsapp.com/send?phone=56946833575&text=Hola!%20muy%20buen%20día%0AMi%20nombre%20es%20${txtName.current.value}%0ANecesito%20por%20favor%20la%20cotización%20de%20los%20productos%20de%20la%20siguiente%20lista:%0A%0A${products.map(product => { return(`${product.replace(' ','%20').replace(',','.')}%0A`)})}`
+      message = `https://api.whatsapp.com/send?phone=57${vendor}&text=Hola!%20muy%20buen%20día%0AMi%20nombre%20es%20${txtName.current.value}%0ANecesito%20por%20favor%20la%20cotización%20de%20los%20productos%20de%20la%20siguiente%20lista:%0A%0A${products.map(product => { return(`${product.replace(' ','%20').replace(',','.')}%0A`)})}`
   
       window.open(message);
   
