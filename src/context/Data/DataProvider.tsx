@@ -58,6 +58,9 @@ const DataProvider:FC<Props> = ( { children } ) => {
          case '7':
             dispatch({type:'vendor - Set Vendor', payload: '3117613737'})
             break;
+         case '8':
+            dispatch({type:'vendor - Set Vendor', payload: '3173708232'})
+            break;
          default:
             break;
       }
@@ -65,7 +68,7 @@ const DataProvider:FC<Props> = ( { children } ) => {
 
    useEffect(()=>{
       setVendor();
-   },[])
+   },[]);
 
    return (
       <DataContext.Provider value={{
