@@ -51,6 +51,13 @@ const DataProvider:FC<Props> = ( { children } ) => {
             break;
          case '5':
             dispatch({type:'vendor - Set Vendor', payload: '3113172224'})
+            break;
+         case '6':
+            dispatch({type:'vendor - Set Vendor', payload: '3108305458'})
+            break;
+         case '7':
+            dispatch({type:'vendor - Set Vendor', payload: '3117613737'})
+            break;
          default:
             break;
       }
