@@ -23,7 +23,8 @@ export const ChatWidget:FC<Props> = ({ active, onClick }) => {
         setAct( !act );
     }
     const handleSendMessage = () => {
-        `gtag_report_conversion()`
+        // @ts-ignore
+        gtag_report_conversion();
         const url = `https://api.whatsapp.com/send?phone=57${vendor}&text=Hola!%21%20Quisiera%20m%C3%A1s%20informaci%C3%B3n%20sobre%20sus%20servicios."`
         const win = window.open(url, '_blank');
         win?.focus();
