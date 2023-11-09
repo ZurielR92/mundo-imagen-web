@@ -6,6 +6,8 @@ import { Footer } from '@/Components/Footer'
 import { ChatWidget } from '@/Components/MaterialZ/ChatWidget'
 import { CartMenu } from '@/Components/CartMenu'
 import Header from '@/Components/Header'
+import Head from 'next/head'
+import Script from 'next/script'
 
 const rubik = Rubik({
   subsets:['latin'],
@@ -41,6 +43,18 @@ export default function RootLayout({
   
   return (
     <html lang="es">
+      <Script async src='https://www.googletagmanager.com/gtag/js?id=AW-11403069413'/>
+      <Script>
+        {
+          `
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){ window.dataLayer.push(arguments)}
+            gtag('js', new Date());
+          `
+        }
+
+        gtag('config', 'AW-11403069413');
+      </Script>
       <body className={`${rubik.variable} ${pacifico.variable}`}>
         <ContextWrapper>
           <Header/>
