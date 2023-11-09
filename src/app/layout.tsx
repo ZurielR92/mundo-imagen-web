@@ -44,16 +44,16 @@ export default function RootLayout({
   return (
     <html lang="es">
       <Script async src='https://www.googletagmanager.com/gtag/js?id=AW-11403069413'/>
-      <Script>
+      <Script id='google-tag' strategy='afterInteractive'>
         {
           `
             window.dataLayer = window.dataLayer || [];
             function gtag(){ window.dataLayer.push(arguments)}
             gtag('js', new Date());
+            gtag('config', 'AW-11403069413');
           `
         }
 
-        gtag('config', 'AW-11403069413');
       </Script>
       <body className={`${rubik.variable} ${pacifico.variable}`}>
         <ContextWrapper>
