@@ -43,7 +43,7 @@ export default function RootLayout({
   
   return (
     <html lang="es">
-      <Script async src='https://www.googletagmanager.com/gtag/js?id=AW-11403069413'/>
+      <Script strategy='beforeInteractive' src='https://www.googletagmanager.com/gtag/js?id=AW-11403069413'/>
       <Script id='google-tag' strategy='afterInteractive'>
         {
           `
