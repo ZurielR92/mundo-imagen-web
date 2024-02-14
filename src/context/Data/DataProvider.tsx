@@ -15,7 +15,7 @@ export interface DataState {
 
 const DATA_INITIAL_STATE: DataState = {
    products: [],
-   vendor: '3017497431'
+   vendor: '3136509196'
 }
 
 const DataProvider:FC<Props> = ( { children } ) => {

@@ -1109,9 +1109,9 @@ export const categoriesList: ICategory[] = [
                 altImg:'Letreros neonflex en santiago',
                 shortDescription:'', 
                 priceConfig: {
-                    priceType: 'Precio por Cm2',
+                    priceType: 'Precio Fijo',
                     price: 80000,
-                    queantity: 1000,
+                    queantity: 1,
                 }
             },
             {
@@ -1120,9 +1120,9 @@ export const categoriesList: ICategory[] = [
                 altImg:'Letreros neonflex colores en santiago',
                 shortDescription:'', 
                 priceConfig: {
-                    priceType: 'Precio por Cm2',
+                    priceType: 'Precio Fijo',
                     price: 80000,
-                    queantity: 1000,
+                    queantity: 1,
                 }
             },
             {
@@ -1131,9 +1131,9 @@ export const categoriesList: ICategory[] = [
                 altImg:'Letreros neonflex colores en santiago',
                 shortDescription:'', 
                 priceConfig: {
-                    priceType: 'Precio por Cm2',
+                    priceType: 'Precio Fijo',
                     price: 80000,
-                    queantity: 1000,
+                    queantity: 1,
                 }
             },
             {
@@ -1142,7 +1142,44 @@ export const categoriesList: ICategory[] = [
                 altImg:'Letreros neonflex colores en santiago',
                 shortDescription:'', 
                 priceConfig: {
-                    priceType: 'Precio por Cm2',
+                    priceType: 'Precio Fijo',
+                    price: 80000,
+                    queantity: 1,
+                }
+            },
+        ]
+    },
+    {
+        code: '0408',
+        type: 'Publicidad Exterior',
+        name: 'Banderines',
+        shortDescription: 'zzz...',
+        description: 'dfjsdfsd',
+        basicPrice: 25000,
+        minQuantity: 5,
+        url: '/servicios/publicidad_exterior/banderines',
+        displayImage: '/img/products/publicidad_exterior/banderin.jpg',
+        altDisplay: 'Avisos neonflex en santiago',
+        gallery: [''],
+        products: [
+            {
+                title:'Banderin con Base Cuadrada',
+                img: '/img/products/publicidad_exterior/banderin-base-cuadrada.jpg',
+                altImg:'Letreros neonflex en santiago',
+                shortDescription:'', 
+                priceConfig: {
+                    priceType: 'Precio Fijo',
+                    price: 80000,
+                    queantity: 1000,
+                }
+            },
+            {
+                title:'Banderin con Base de Tubería',
+                img: '/img/products/publicidad_exterior/banerin-base-tuberia.jpg',
+                altImg:'Letreros neonflex colores en santiago',
+                shortDescription:'', 
+                priceConfig: {
+                    priceType: 'Precio Fijo',
                     price: 80000,
                     queantity: 1000,
                 }
