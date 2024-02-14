@@ -1091,6 +1091,65 @@ export const categoriesList: ICategory[] = [
         ]
     },
     {
+        code: '0407',
+        type: 'Publicidad Exterior',
+        name: 'Inflables',
+        shortDescription: 'zzz...',
+        description: 'dfjsdfsd',
+        basicPrice: 25000,
+        minQuantity: 5,
+        url: '/servicios/publicidad_exterior/inflables',
+        displayImage: '/img/products/publicidad_exterior/inflables.jpg',
+        altDisplay: 'Avisos neonflex en santiago',
+        gallery: [''],
+        products: [
+            {
+                title:'Arcos',
+                img: '/img/products/publicidad_exterior/arcos.jpg',
+                altImg:'Letreros neonflex en santiago',
+                shortDescription:'', 
+                priceConfig: {
+                    priceType: 'Precio por Cm2',
+                    price: 80000,
+                    queantity: 1000,
+                }
+            },
+            {
+                title:'Carpas',
+                img: '/img/products/publicidad_exterior/carpas.jpg',
+                altImg:'Letreros neonflex colores en santiago',
+                shortDescription:'', 
+                priceConfig: {
+                    priceType: 'Precio por Cm2',
+                    price: 80000,
+                    queantity: 1000,
+                }
+            },
+            {
+                title:'Dummies',
+                img: '/img/products/publicidad_exterior/dummies.jpg',
+                altImg:'Letreros neonflex colores en santiago',
+                shortDescription:'', 
+                priceConfig: {
+                    priceType: 'Precio por Cm2',
+                    price: 80000,
+                    queantity: 1000,
+                }
+            },
+            {
+                title:'Colchones',
+                img: '/img/products/publicidad_exterior/colchones.jpg',
+                altImg:'Letreros neonflex colores en santiago',
+                shortDescription:'', 
+                priceConfig: {
+                    priceType: 'Precio por Cm2',
+                    price: 80000,
+                    queantity: 1000,
+                }
+            },
+        ]
+    },
+    {
         code: '0501',
         type: 'Gran Formato',
         name: 'Vinilos Adhesivos',
@@ -1205,7 +1264,7 @@ export const categoriesList: ICategory[] = [
                 altImg:'vinilo vehicular en santiago',
                 shortDescription:'',
                 priceConfig: {
-                    priceType: 'Precio por Cm2',
+                    priceType: 'Precio Fijo',
                     price: 80000,
                     queantity: 1000
                 }
@@ -1216,7 +1275,7 @@ export const categoriesList: ICategory[] = [
                 altImg:'vinilo vehicular microperforado en santiago',
                 shortDescription:'',
                 priceConfig: {
-                    priceType: 'Precio por Cm2',
+                    priceType: 'Precio Fijo',
                     price: 80000,
                     queantity: 1000
                 }

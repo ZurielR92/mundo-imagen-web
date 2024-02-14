@@ -6,13 +6,13 @@ import { IProduct } from '../../../../interfaces/Product'
 import { Section } from '../../../../Components/Section'
 import Link from 'next/link'
 
-const CajasPlegadizasPage = () => {
+const RompetraficosPage = () => {
 
     const list: IProduct[] = []
     const FAQs:{ask:string, response:string}[]=[]
   
     categoriesList.find(cat => {
-      if (cat.code === '0701') {
+      if (cat.code === '0407') {
         cat.FAQs?.forEach(element => {
           FAQs.push(element)
         })
@@ -26,14 +26,14 @@ const CajasPlegadizasPage = () => {
     return (
 
         <>
-        <TitlePage title='Cajas Plegadizas en Medellín'>
-            <Link href={'/'}>Inicio</Link> • <Link href={ '/servicios' } >Servicios</Link> • <Link href={ '/servicios/cajas_y_empaques' }>Cajas & Empaques</Link>
+        <TitlePage title='Inflables en Medellín'>
+            <Link href={'/'}>Inicio</Link> • <Link href={ '/servicios' } >Servicios</Link> • <Link href={ '/servicios/publicidad_exterior' }>Publicidad Exterior</Link>
         </TitlePage>
 
         <Section colorClipTop={'resalt'} invert style={{ paddingTop:100, paddingBottom:100 }} colorClipBottom='dark'>
             <ProductsGrid
-                subtitle='¿Cual tipo tipo de caja necesito para mi empresa?'
-                title='Conoce nuestra variedad de Cajas Plegadizas'
+                subtitle='¿Cual tipo de inflable necesito para mi empresa?'
+                title='Conoce nuestra variedad de Inflables'
                 products={list}
             />
         </Section>
@@ -42,4 +42,4 @@ const CajasPlegadizasPage = () => {
 
 }
 
-export default CajasPlegadizasPage
+export default RompetraficosPage
