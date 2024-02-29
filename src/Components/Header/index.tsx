@@ -66,7 +66,7 @@ const Header:FC<Props> = () => {
                 
 
 
-                <Image alt='' priority src={'/logo_mundo_imagen.png'} width={179} height={40}/>
+                <Image alt='' priority src={'/logo-kort.png'} width={68} height={40}/>
 
 
 
@@ -86,7 +86,7 @@ const Header:FC<Props> = () => {
 
                 <div className={styles['contenedor-logo']}>
                     <Link href={'/'} aria-label='Inicio Mundo Imagen'>
-                        <Image alt='' priority src={'/logo_mundo_imagen.png'} width={215} height={48}/>
+                        <Image alt='' priority src={'/logo-kort.png'} width={86} height={50}/>
                     </Link>
                 </div>
 

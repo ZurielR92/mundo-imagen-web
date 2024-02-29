@@ -16,7 +16,7 @@ export const WelcomeHome:FC<Props> = () => {
 
             <div className={ styles.grid }>
                 <div>
-                    <span>Bienvenidos a Grupo Mundo Imagen</span>
+                    <span>Bienvenidos a Agencia Kubica</span>
                     <h1>
                         <strong>Litografía</strong>, <br/>
                         Gran Formato <br/>

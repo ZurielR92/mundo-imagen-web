@@ -34,22 +34,6 @@ export const Section:FC<Props> = ({ style, children, colorClipBottom=null, color
 
     return (
         <section style={ style } className={ styles.section }>
-            {
-                invert
-                    ? (
-                        <>
-                            <div style={{ display: colorClipTop ? 'block':'none'  }} className={ `${ styles.clip1 } ${ getColor( colorClipTop ) }` }></div>
-                            <div style={{ display: colorClipBottom ? 'block':'none'  }} className={ `${ styles.clip2 } ${ getColor( colorClipBottom ) }` }></div>
-                        </>
-                    ) : ( 
-                        <>
-                            <div style={{ display: colorClipTop ? 'block':'none'  }} className={ `${ styles.clip3 } ${ getColor( colorClipTop ) }` }></div>
-                            <div style={{ display: colorClipBottom ? 'block':'none'  }} className={ `${ styles.clip4 } ${ getColor( colorClipBottom ) }` }></div>
-                        </>
-                     )
-            }
-
-
             { children } 
         </section>
     )

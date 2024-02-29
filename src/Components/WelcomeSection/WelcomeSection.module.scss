@@ -1,0 +1,89 @@
+.welcomesection {
+    min-height: 60vh;
+    position: relative;
+    background: var(--color-primary);
+    overflow: hidden;
+    padding: 1rem;
+    color: white;
+    display: flex;
+    .container {
+        display: flex;
+        gap: 1rem;
+        flex-grow: 1;
+        align-items: center;
+        margin: auto;
+        max-width: 1280px;
+        .info {
+            display: flex;
+            flex-direction: column;
+            flex-grow: 1;
+            h1 {
+                font-size: 4rem;
+                max-width: 600px;
+                line-height: 3.5rem;
+            }
+            p {
+                font-size: 1.5rem;
+                max-width: 600px;
+                margin-top: 1rem;
+            }
+            span {
+                margin-top: 3rem;
+            }
+            >a {
+                width: fit-content;
+            }
+            button {
+                margin-top: 1rem;
+                border: none;
+                padding: 1rem;
+                font-family: var(--font-body);
+                background: var(--color-action);
+                font-weight: 500;
+                border-radius: .5rem;
+                color: white;
+                font-size: 1.1rem;
+            }
+        }
+
+        .image {
+    
+        }
+
+    }
+    .svg {
+        position: absolute;
+        bottom: -1px;
+        width: 100vw;
+        left: 0;
+    }
+    .background {
+        background: var(--color-primary);
+        z-index: -1;
+        object-fit: cover;
+        object-position: center;
+    }
+}
+
+
+@media screen and (max-width:990px) {
+    .welcomesection {
+        .container {
+            flex-direction: column-reverse;
+            margin-top: 4rem;
+            margin-bottom: 4rem;
+            .info {
+                h1 {
+                    font-size: 3rem;
+                }
+            }
+            .image {
+                img {
+                    max-width: 90vw;
+                    height: fit-content;
+                    object-fit: contain;
+                }
+            }
+        }
+    }
+}

@@ -5,6 +5,7 @@ import { categoriesList } from '@/data/products';
 import { ICategory } from '@/interfaces';
 import { WhyUs } from './components/WhyUs';
 import { Services } from './components/Services';
+import { WelcomeSection } from '@/Components/WelcomeSection';
 
 
 const getCategories = async () => {
@@ -31,8 +32,17 @@ const HomePage = async ({ searchParams }:Props) => {
   
   return (
     <main>
-      <WelcomeHome/>
-      <WhyUs/>
+      <WelcomeSection
+        title={<>
+          Gran Formato <br />
+          Litografía y <br />
+          Corte Laser en<br />
+          Promocionales <br />
+          en Medellín
+        </>}
+        description={<>Aqui va la descripción</>}
+        urlImage='/welcome-home.webp'
+      />
       <CategoriesSection categories={categories}/>
       <Services/>
       <CustomersSection/>

@@ -1,12 +1,11 @@
 import type { Metadata } from 'next'
-import { Inter, Rubik, Pacifico } from 'next/font/google'
-import './globals.css'
+import { Rubik, Pacifico } from 'next/font/google'
+import '@/styles/globals.scss'
 import { ContextWrapper } from '@/context'
 import { Footer } from '@/Components/Footer'
 import { ChatWidget } from '@/Components/MaterialZ/ChatWidget'
 import { CartMenu } from '@/Components/CartMenu'
 import Header from '@/Components/Header'
-import Head from 'next/head'
 import Script from 'next/script'
 
 const rubik = Rubik({
@@ -14,6 +13,7 @@ const rubik = Rubik({
   display:'swap',
   variable: '--font-rubik'
 })
+
 const pacifico = Pacifico({
   subsets:['latin'],
   display:'swap',
@@ -22,9 +22,8 @@ const pacifico = Pacifico({
 })
 
 export const metadata: Metadata = {
-  title: 'Litografía en Medellín | Mundo Imagen Publicidad',
+  title: 'Agencia de Publicidad | Agencia Kubica Medellín',
   description: 'Ofrecemos servicios de litografía y publicidad en Medellín. Impresión de calidad, diseño gráfico y soluciones publicitarias para tu negocio. ¡Contáctanos hoy!',
-  themeColor:'#fff',
   icons:{
     apple:'/icon-512x512.png',
     icon: {
@@ -66,8 +65,8 @@ export default function RootLayout({
             }
           `
         }
-
       </Script>
+
       <body className={`${rubik.variable} ${pacifico.variable}`}>
         <ContextWrapper>
           <Header/>
