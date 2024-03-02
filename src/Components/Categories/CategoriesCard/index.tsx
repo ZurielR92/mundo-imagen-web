@@ -1,7 +1,9 @@
+'use client'
 import Image from 'next/image'
 import Link from 'next/link'
 import { FC } from 'react'
 import { ICategory } from '../../../interfaces'
+import { Variants, motion } from 'framer-motion'
 
 //Importacion de estilos
 import styles from './CategoriesCard.module.scss'
@@ -21,12 +23,27 @@ export const formatPeso = ( ammount:number ) => {
   return format.format(ammount)
 }
 
+const item: Variants = {
+  hidden: { 
+      y: 20, 
+      opacity:0 
+  },
+  visible: {
+      y: 0,
+      opacity: 1
+  }
+}
+
 
 export const CategoriesCard:FC<Props> = ({ category }) => {
 
     return (
 
-      <div className={styles.card2}>
+      <motion.div
+        variants={item} 
+        className={styles.card2}
+        
+      >
         <Link href={category.url}>
           <div className={styles['img-box2']}>
             <Image src={category.displayImage} fill alt={category.altDisplay}/>
@@ -35,7 +52,7 @@ export const CategoriesCard:FC<Props> = ({ category }) => {
             {category.name}
           </div>
         </Link>
-      </div>
+      </motion.div>
     )
 
 }

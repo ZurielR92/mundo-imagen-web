@@ -1,0 +1,57 @@
+.customerssection {
+    .logos {
+        overflow: hidden;
+        padding: 40px 0;
+        background: white;
+        white-space: nowrap;
+        position: relative;
+        display: flex;
+        gap: 2rem;
+
+        &::before, &::after {
+            position: absolute;
+            top: 0;
+            width: 250px;
+            height: 100%;
+            content: "";
+            z-index: 2;
+            pointer-events: none;
+        }
+
+        &::before {
+            left: 0;
+            background: linear-gradient(to left, rgba(255, 255, 255, 0), white);
+        }
+
+        &::after {
+            right: 0;
+            background: linear-gradient(to right, rgba(255, 255, 255, 0), white);
+        }
+    }
+        
+    .logosslide {
+        display: flex;
+        gap: 2rem;
+        align-items: center;
+        animation: 60s slide infinite linear;
+        img {
+            filter: grayscale(100%);
+            opacity: .5;
+            transition: all .3s ease-in-out;
+            &:hover {
+                filter: none;
+                opacity: 1;
+            }
+        }
+    }
+}
+
+
+@keyframes slide {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-100%);
+    }
+  }

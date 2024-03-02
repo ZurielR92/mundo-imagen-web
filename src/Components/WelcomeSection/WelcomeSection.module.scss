@@ -1,8 +1,9 @@
 .welcomesection {
     min-height: 60vh;
     position: relative;
-    background: var(--color-primary);
-    overflow: hidden;
+    background-color: #0056a4;
+    opacity: 1;
+    background-image:  repeating-radial-gradient( circle at 0 0, transparent 0, #0056a4 40px ), repeating-linear-gradient( #004b9255, #004b92 );    overflow: hidden;
     padding: 1rem;
     color: white;
     display: flex;

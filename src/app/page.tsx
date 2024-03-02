@@ -1,11 +1,11 @@
 import { CategoriesSection } from '@/Components/HomePage/CategoriesSection';
-import { CustomersSection } from '@/Components/HomePage/CustomersSection';
 import { WelcomeHome } from '@/Components/HomePage/Welcome'
 import { categoriesList } from '@/data/products';
 import { ICategory } from '@/interfaces';
 import { WhyUs } from './components/WhyUs';
 import { Services } from './components/Services';
 import { WelcomeSection } from '@/Components/WelcomeSection';
+import { CustomersSection } from '@/Components/CustomersSection';
 
 
 const getCategories = async () => {
@@ -35,17 +35,17 @@ const HomePage = async ({ searchParams }:Props) => {
       <WelcomeSection
         title={<>
           Gran Formato <br />
-          Litografía y <br />
-          Corte Laser en<br />
+          Litografía, <br />
+          Corte Laser y<br />
           Promocionales <br />
           en Medellín
         </>}
         description={<>Aqui va la descripción</>}
         urlImage='/welcome-home.webp'
       />
+      <CustomersSection/>
       <CategoriesSection categories={categories}/>
       <Services/>
-      <CustomersSection/>
     </main>
   )
 }
